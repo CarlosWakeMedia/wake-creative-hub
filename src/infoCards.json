@@ -1,0 +1,69 @@
+{
+  "card1": {
+    "title": "Branding",
+    "text":"Damos vida a las marcas desde el momento que son una idea (ó que quieren cambiar su identidad) y ñas acompañamos o damos seguimiento a lo largo de su trayectoria",
+    "puntos": {
+      "1": "Conceptualización",
+      "2": "Propuestas de Valor",
+      "3": "Naming",
+      "4": "Diseño de marca",
+      "5": "Estrategia de marca",
+      "6": "Seguimiento en redes sociales",
+      "7": "Landing Page"
+    }
+  },
+  "card2": {
+    "title": "Presence is more than being online",
+    "text":"Google es más que una herramienta: la presencia digital se trata de una estrategia completa",
+    "puntos": {
+      "1": "Análisis de tu Website",
+      "2": "SEO",
+      "3": "UX desing & mejoras del sitio",
+      "4": "Desarrollo WEB y app",
+      "5": "Display & Ads en social media y WWW"
+    }
+  },
+  "card3": {
+    "title": "Full Strategy",
+    "text":"Cuando todo se mueve tan rápido, una estrategia real es algo dificil de conseguir, Nosotros lo hacemos algo tangible para ti",
+    "puntos": {
+      "1": "Análisis demográficos y de interes",
+      "2": "Estrategias de Engagement & Awareness",
+      "3": "Estrategias de tráfico y conversión",
+      "4": "Diseño de media plan ajustado a budget, con enfoque a objetivos y segmentación"
+    }
+  },
+  "card4": {
+    "title": "Creativity",
+    "text":"Por creatividad no paramos, contamos con distintas disciplinas dentro de nuestro equipo que nos permite desarrollar las mejores ideas para tu marca",
+    "puntos": {
+      "1": "Storytelling",
+      "2": "Desarrollo de campañas por objetivo ",
+      "3": "Activaciones online y offline",
+      "4": "Eventos",
+      "5": "Colaboraciones",
+      "6": "Proyectos creativos"
+    }
+  },
+  "card5": {
+    "title": "True Content",
+    "text":"Desarrollamos un mapa de creatividad y estrategia, enfocado en tus objetivos",
+    "puntos": {
+      "1": "Social Media (por supuesto)",
+      "2": "Diseño",
+      "3": "Storytelling digital",
+      "4": "Producción audiovisual",
+      "5": "Manejo de comunidad y crisis",
+      "6": "Motion Graphics"
+    }
+  },
+  "card6": {
+    "title": "Data & Analytics",
+    "text":"Ser objetivo es un arte, por eso nos enfocamos en observar y desarrollar reportes profundos que te permiten saber qué sucede con tu marca",
+    "puntos": {
+      "1": "Análisis de comportamiento del sitio",
+      "2": "Análisis de tráfico y navegación con seguimiento de Trackers y Pixels",
+      "3": "Análisis de target (qué consumen, qué les gusta, cuáles son sus influencers, y cuáles son sus hábitos de comsumo en medios digitales"
+    }
+  }
+}
