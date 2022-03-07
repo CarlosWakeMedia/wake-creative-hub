@@ -39,6 +39,14 @@
   "description": "In the project directory, you can run:",
   "main": "index.js",
   "devDependencies": {},
-  "author": "Carlos Meneses <carlosamenesesc@gmail.com>",
-  "license": "ISC"
+  "author": "Carlos Meneses <carlo@wakemedia.mx>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlosWakeMedia/wake-creative-hub.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CarlosWakeMedia/wake-creative-hub/issues"
+  },
+  "homepage": "https://github.com/CarlosWakeMedia/wake-creative-hub#readme"
 }
