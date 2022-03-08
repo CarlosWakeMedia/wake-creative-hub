@@ -36,7 +36,7 @@ const CardContainer = styled.div`
     flex-direction: row;
     gap: 1rem;
     width: 42%;
-    height: 20rem;
+    height: 22rem;
     padding: 1rem;
     margin: 1rem 0;
     box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
@@ -91,6 +91,7 @@ const Image = styled.img`
 
 const TituloCard = styled.h1`
   font-size: 1.5rem;
+  font-family: 'Fraunces', serif;
   margin: 0;
   text-align: center;
 `;
@@ -136,45 +137,6 @@ export const Card2 = () => {
   return (
     <CardContainer>
       <TextContainer>
-        <TituloCard>{data.card2.title }</TituloCard>
-        <TextCard>{data.card2.text }</TextCard>
-        <List>
-          <ListItem>{data.card2.puntos[1] }</ListItem>
-          <ListItem>{data.card2.puntos[2] }</ListItem>
-          <ListItem>{data.card2.puntos[3] }</ListItem>
-          <ListItem>{data.card2.puntos[4] }</ListItem>
-          <ListItem>{data.card2.puntos[5] }</ListItem>
-        </List>
-      </TextContainer>
-      <ImageContainer>
-        <Image src={img2}/>
-      </ImageContainer>
-    </CardContainer>
-  )
-}
-export const Card3 = () => {
-  return (
-    <CardContainer>
-      <TextContainer>
-        <TituloCard>{data.card3.title }</TituloCard>
-        <TextCard>{data.card3.text }</TextCard>
-        <List>
-          <ListItem>{data.card3.puntos[1] }</ListItem>
-          <ListItem>{data.card3.puntos[2] }</ListItem>
-          <ListItem>{data.card3.puntos[3] }</ListItem>
-          <ListItem>{data.card3.puntos[4] }</ListItem>
-        </List>
-      </TextContainer>
-      <ImageContainer>
-        <Image src={img3}/>
-      </ImageContainer>
-    </CardContainer>
-  )
-}
-export const Card4 = () => {
-  return (
-    <CardContainer>
-      <TextContainer>
         <TituloCard>{data.card4.title }</TituloCard>
         <TextCard>{data.card4.text }</TextCard>
         <List>
@@ -187,12 +149,32 @@ export const Card4 = () => {
         </List>
       </TextContainer>
       <ImageContainer>
-        <Image src={img4}/>
+        <Image src={img2}/>
       </ImageContainer>
     </CardContainer>
   )
 }
-export const Card5 = () => {
+export const Card3 = () => {
+  return (
+    <CardContainer>
+      <TextContainer>
+        <TituloCard>{data.card2.title }</TituloCard>
+        <TextCard>{data.card2.text }</TextCard>
+        <List>
+          <ListItem>{data.card2.puntos[1] }</ListItem>
+          <ListItem>{data.card2.puntos[2] }</ListItem>
+          <ListItem>{data.card2.puntos[3] }</ListItem>
+          <ListItem>{data.card2.puntos[4] }</ListItem>
+          <ListItem>{data.card2.puntos[5] }</ListItem>
+        </List>
+      </TextContainer>
+      <ImageContainer>
+        <Image src={img3}/>
+      </ImageContainer>
+    </CardContainer>
+  )
+}
+export const Card4 = () => {
   return (
     <CardContainer>
       <TextContainer>
@@ -208,12 +190,12 @@ export const Card5 = () => {
         </List>
       </TextContainer>
       <ImageContainer>
-        <Image src={img5}/>
+        <Image src={img4}/>
       </ImageContainer>
     </CardContainer>
   )
 }
-export const Card6 = () => {
+export const Card5 = () => {
   return (
     <CardContainer>
       <TextContainer>
@@ -223,6 +205,25 @@ export const Card6 = () => {
           <ListItem>{data.card6.puntos[1] }</ListItem>
           <ListItem>{data.card6.puntos[2] }</ListItem>
           <ListItem>{data.card6.puntos[3] }</ListItem>
+        </List>
+      </TextContainer>
+      <ImageContainer>
+        <Image src={img5}/>
+      </ImageContainer>
+    </CardContainer>
+  )
+}
+export const Card6 = () => {
+  return (
+    <CardContainer>
+      <TextContainer>
+        <TituloCard>{data.card3.title }</TituloCard>
+        <TextCard>{data.card3.text }</TextCard>
+        <List>
+          <ListItem>{data.card3.puntos[1] }</ListItem>
+          <ListItem>{data.card3.puntos[2] }</ListItem>
+          <ListItem>{data.card3.puntos[3] }</ListItem>
+          <ListItem>{data.card3.puntos[4] }</ListItem>
         </List>
       </TextContainer>
       <ImageContainer>
