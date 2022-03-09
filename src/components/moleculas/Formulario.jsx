@@ -23,8 +23,12 @@ const Form = styled.form`
   width:90%;
   height:28rem;
   background:#e6e6e6;
-  border-radius:8px;
-  box-shadow:0 0 40px -10px #000;
+  border-radius: 30px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1),
+              0 2px 2px rgba(0,0,0,0.1),
+              0 4px 4px rgba(0,0,0,0.1),
+              0 8px 8px rgba(0,0,0,0.1),
+              0 16px 16px rgba(0,0,0,0.1);
   margin:4rem auto ;
   padding:20px 30px;
   box-sizing:border-box;
@@ -102,7 +106,12 @@ const InfoContainer = styled.div`
   padding:16px 4px 16px 0;
   border-radius:6px;
   font-size:13px;
-  box-shadow:10px 10px 40px -14px #000;
+  border-radius: 30px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1),
+              0 2px 2px rgba(0,0,0,0.1),
+              0 4px 4px rgba(0,0,0,0.1),
+              0 8px 8px rgba(0,0,0,0.1),
+              0 16px 16px rgba(0,0,0,0.1);
 `;
 const Span = styled.span`
   margin:0 5px 0 15px;

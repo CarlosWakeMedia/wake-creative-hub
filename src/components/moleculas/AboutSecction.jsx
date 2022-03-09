@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { SecondaryColor } from '../../utils/constants'
-import img6 from '../../assets/img/AboutImage.png';
+import aboutImage from '../../assets/img/AboutImage.png';
 
 const AboutContainer = styled.section`
   width: 100%;
@@ -13,7 +13,7 @@ const ContentContainer = styled.div`
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto;
-    grid-template-areas: 
+    grid-template-areas:
         "img    img "
         "list  list "
         "desc  desc "
@@ -22,6 +22,12 @@ const ContentContainer = styled.div`
     height: auto;
     margin: 0 auto;
     background-color: #F8EEE2;
+    border-radius: 30px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1),
+              0 2px 2px rgba(0,0,0,0.1),
+              0 4px 4px rgba(0,0,0,0.1),
+              0 8px 8px rgba(0,0,0,0.1),
+              0 16px 16px rgba(0,0,0,0.1);
     @media (min-width: 768px) {
         grid-template-columns: 40% auto;
         grid-template-rows: 1fr 1fr;
@@ -29,11 +35,13 @@ const ContentContainer = styled.div`
             "img    list "
             "img  desc "
         ;
+        width: 75%;
     }
 `
 const Image = styled.img`
   grid-area: img;
   width:100%;
+  margin: 1rem;
 `
 const AboutList = styled.ul`
     grid-area: list;
@@ -83,7 +91,7 @@ const AboutSecction = () => {
   return (
     <AboutContainer>
        <ContentContainer>
-            <Image src={img6}/>
+            <Image src={aboutImage}/>
             <AboutList>
                <AboutListItem>No somos una consultora.</AboutListItem>
                <AboutListItem>No somos un estudio.</AboutListItem>

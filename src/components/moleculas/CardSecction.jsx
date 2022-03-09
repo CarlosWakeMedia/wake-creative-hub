@@ -8,7 +8,7 @@ const Container = styled.div`
   place-items: center;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
-  padding: 1rem;
+  padding: 5rem;
   background-color: ${PrimaryColor};
   @media (max-width: 780px) {
     grid-template-columns: repeat(2, 1fr);
