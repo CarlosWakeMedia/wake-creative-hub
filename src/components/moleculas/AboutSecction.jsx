@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { SecondaryColor } from '../../utils/constants'
-import img6 from '../../assets/img/AboutImage.png';
+import aboutImage from '../../assets/img/aboutImage.png';
 
 const AboutContainer = styled.section`
   width: 100%;
@@ -67,7 +67,7 @@ const AboutSecction = () => {
   return (
     <AboutContainer>
        <ContentContainer>
-            <Image src={img6}/>
+            <Image src={aboutImage}/>
             <AboutList>
                <AboutListItem>No somos una consultora.</AboutListItem>
                <AboutListItem>No somos un estudio.</AboutListItem>
