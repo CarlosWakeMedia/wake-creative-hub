@@ -9,97 +9,110 @@ import img6 from '../../assets/img/card6.png';
 import data from '../../infoCards.json';
 
 const CardContainer = styled.div`
-  width: 90%;
-  height: 35rem;
-  padding: 1rem 0;
-  background-color: #F8EEE2;
+  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 8px;
-  @media (min-width: 768px) {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    width: 70%;
-    height: 20rem;
-    padding: 1rem;
-    margin: 1rem 0;
-    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
-    transition: all 0.2s;
-    &:hover {
-      box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-    }
-  }
-  @media (min-width: 1024px) {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    width: 42%;
-    height: 22rem;
-    padding: 1rem;
-    margin: 1rem 0;
-    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
-    transition: all 0.2s;
-    &:hover {
-      box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-    }
-  }
-`;
-
-const TextContainer = styled.div`
+  align-items: flex-end;
+  overflow: hidden;
+  padding: 1rem;
   width: 90%;
-  height: 45%;
-  border: 1px solid black;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  @media (min-width: 768px) {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  height: 90%;
+  text-align: center;
+  color: black;
+  border-radius: 30px;
+  background-color: #0a0a0a;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1),
+              0 2px 2px rgba(0,0,0,0.1),
+              0 4px 4px rgba(0,0,0,0.1),
+              0 8px 8px rgba(0,0,0,0.1),
+              0 16px 16px rgba(0,0,0,0.1);
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-size: cover;
+    background-position: 0 0;
+    transition: transform calc(700ms * 1.5) cubic-bezier(0.19, 1, 0.22, 1);
+    pointer-events: none;
   }
-  @media (min-width: 1024px) {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    pointer-events: none;
+    background-image: linear-gradient(
+      to bottom,
+      hsla(0, 0%, 0%, 0) 0%,
+      hsla(0, 0%, 0%, 0.009) 11.7%,
+      hsla(0, 0%, 0%, 0.034) 22.1%,
+      hsla(0, 0%, 0%, 0.072) 31.2%,
+      hsla(0, 0%, 0%, 0.123) 39.4%,
+      hsla(0, 0%, 0%, 0.182) 46.6%,
+      hsla(0, 0%, 0%, 0.249) 53.1%,
+      hsla(0, 0%, 0%, 0.320) 58.9%,
+      hsla(0, 0%, 0%, 0.394) 64.3%,
+      hsla(0, 0%, 0%, 0.468) 69.3%,
+      hsla(0, 0%, 0%, 0.540) 74.1%,
+      hsla(0, 0%, 0%, 0.607) 78.8%,
+      hsla(0, 0%, 0%, 0.668) 83.6%,
+      hsla(0, 0%, 0%, 0.721) 88.7%,
+      hsla(0, 0%, 0%, 0.762) 94.1%,
+      hsla(0, 0%, 0%, 0.790) 100%
+    );
+    transform: translateY(-100%);
+    transition: transform calc(700ms * 2) cubic-bezier(0.19, 1, 0.22, 1);
   }
+  :after {
+    transform: translateY(0);
+  }
+  &::before {
+      background-image: url(${props => props.img});
+    }
+      :after {
+        transform: translateY(0);
+      }
+      :hover,:focus-within {
+        align-items: center;
+        color: white;
+        :before { transform: translateY(-100%); }
+        :after { transform: translateY(-50%); }
+      }
 `;
 
 const ImageContainer = styled.div`
-  width: 90%;
-  height: 55%;
-  @media (min-width: 768px) {
-    width: 50%;
-    height: 90%;
-  }
-  @media (min-width: 1024px) {
-    width: 50%;
-    height: 100%;
-  }
-`;
-
-const Image = styled.img`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  height: 100%;
+  padding: 1rem;
+  transition: transform 700ms cubic-bezier(0.19, 1, 0.22, 1);
+  z-index: 1;
+  opacity: 0;
+  ${CardContainer}:hover & {
+    opacity: 1;
+  }
 `;
 
-const TituloCard = styled.h1`
+const TituloCard = styled.h2`
   font-size: 1.5rem;
   font-family: 'Fraunces', serif;
-  margin: 0;
+  font-weight: bold;
+  line-height: 1.2;
   text-align: center;
 `;
 
 const TextCard = styled.p`
   font-size: 0.8rem;
   padding: 0 0.2rem;
-  margin: 0;
+  font-style: italic;
+  line-height: 1.35;
 `;
 
 const List = styled.ul`
@@ -113,8 +126,8 @@ const ListItem = styled.li`
 
 export const Card1 = () => {
   return (
-    <CardContainer>
-      <TextContainer>
+    <CardContainer img={img1}>
+      <ImageContainer>
         <TituloCard>{data.card1.title }</TituloCard>
         <TextCard>{data.card1.text }</TextCard>
         <List>
@@ -126,17 +139,14 @@ export const Card1 = () => {
           <ListItem>{data.card1.puntos[6] }</ListItem>
           <ListItem>{data.card1.puntos[7] }</ListItem>
         </List>
-      </TextContainer>
-      <ImageContainer>
-        <Image src={img1}/>
       </ImageContainer>
     </CardContainer>
   )
 }
 export const Card2 = () => {
   return (
-    <CardContainer>
-      <TextContainer>
+    <CardContainer img={img2}>
+      <ImageContainer>
         <TituloCard>{data.card4.title }</TituloCard>
         <TextCard>{data.card4.text }</TextCard>
         <List>
@@ -147,17 +157,15 @@ export const Card2 = () => {
           <ListItem>{data.card4.puntos[5] }</ListItem>
           <ListItem>{data.card4.puntos[6] }</ListItem>
         </List>
-      </TextContainer>
-      <ImageContainer>
-        <Image src={img2}/>
+
       </ImageContainer>
     </CardContainer>
   )
 }
 export const Card3 = () => {
   return (
-    <CardContainer>
-      <TextContainer>
+    <CardContainer img={img3}>
+      <ImageContainer>
         <TituloCard>{data.card2.title }</TituloCard>
         <TextCard>{data.card2.text }</TextCard>
         <List>
@@ -167,17 +175,14 @@ export const Card3 = () => {
           <ListItem>{data.card2.puntos[4] }</ListItem>
           <ListItem>{data.card2.puntos[5] }</ListItem>
         </List>
-      </TextContainer>
-      <ImageContainer>
-        <Image src={img3}/>
       </ImageContainer>
     </CardContainer>
   )
 }
 export const Card4 = () => {
   return (
-    <CardContainer>
-      <TextContainer>
+    <CardContainer img={img4}>
+      <ImageContainer>
         <TituloCard>{data.card5.title }</TituloCard>
         <TextCard>{data.card5.text }</TextCard>
         <List>
@@ -188,17 +193,14 @@ export const Card4 = () => {
           <ListItem>{data.card5.puntos[5] }</ListItem>
           <ListItem>{data.card5.puntos[6] }</ListItem>
         </List>
-      </TextContainer>
-      <ImageContainer>
-        <Image src={img4}/>
       </ImageContainer>
     </CardContainer>
   )
 }
 export const Card5 = () => {
   return (
-    <CardContainer>
-      <TextContainer>
+    <CardContainer img={img5}>
+      <ImageContainer>
         <TituloCard>{data.card6.title }</TituloCard>
         <TextCard>{data.card6.text }</TextCard>
         <List>
@@ -206,17 +208,14 @@ export const Card5 = () => {
           <ListItem>{data.card6.puntos[2] }</ListItem>
           <ListItem>{data.card6.puntos[3] }</ListItem>
         </List>
-      </TextContainer>
-      <ImageContainer>
-        <Image src={img5}/>
       </ImageContainer>
     </CardContainer>
   )
 }
 export const Card6 = () => {
   return (
-    <CardContainer>
-      <TextContainer>
+    <CardContainer img={img6}>
+      <ImageContainer>
         <TituloCard>{data.card3.title }</TituloCard>
         <TextCard>{data.card3.text }</TextCard>
         <List>
@@ -225,9 +224,6 @@ export const Card6 = () => {
           <ListItem>{data.card3.puntos[3] }</ListItem>
           <ListItem>{data.card3.puntos[4] }</ListItem>
         </List>
-      </TextContainer>
-      <ImageContainer>
-        <Image src={img6}/>
       </ImageContainer>
     </CardContainer>
   )

@@ -4,22 +4,19 @@ import { PrimaryColor } from '../../utils/constants'
 import {Card1, Card2, Card3, Card4,Card5, Card6} from '../atoms/Cards';
 
 const Container = styled.div`
-  width: 100%;
-  height: auto;
-  padding: 2rem 0;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  padding: 1rem;
   background-color: ${PrimaryColor};
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
-  @media (min-width: 1024px) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2rem;
+  @media (max-width: 780px) {
+    grid-template-columns: repeat(2, 1fr);
   }
-`;
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+  `;
 
 const CardSecction
   = () => {

@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import {Button} from '../atoms/Button'
 import { BackgroundColor } from '../../utils/constants';
 
 const ContainerBriefcase = styled.section`
@@ -15,39 +16,26 @@ const ContainerBriefcase = styled.section`
   color: white;
 `;
 
-const BriefcaseTitle = styled.h1`
+export const Title = styled.h1`
   font-size: 2rem;
   text-align: center;
 `;
-const BriefcaseText = styled.p`
+export const Text = styled.p`
   font-size: 1.2rem;
   text-align: center;
-`;
-
-const BriefcaseButton = styled.a`
-  padding: 1rem;
-  border-radius: 35px;
-  background-color: white;
-  color: ${BackgroundColor};
-  font-size: 1rem;
-  border: none;
-  text-decoration: none;
-  &:hover {
-    background-color: ${BackgroundColor};
-    color: white;
-    border: 1px solid white;
-  }
 `;
 
 const Briefcase = () => {
   return (
     <ContainerBriefcase>
-      <BriefcaseTitle>¿Quieres Conocer parte de nuestro trabajo?</BriefcaseTitle>
-      <BriefcaseText>Descarga nuestra presentación</BriefcaseText>
-      <BriefcaseButton
+      <Title>¿Quieres Conocer parte de nuestro trabajo?</Title>
+      <Text>Descarga nuestra presentación</Text>
+      <Button
         href='presentación'
         download='presentacion'
-      >Descarga aquí!!</BriefcaseButton>
+        value={'Descarga aquí!!'}
+      >
+      </Button>
     </ContainerBriefcase>
   )
 }

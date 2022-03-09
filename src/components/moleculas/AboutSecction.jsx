@@ -25,7 +25,7 @@ const ContentContainer = styled.div`
     @media (min-width: 768px) {
         grid-template-columns: 40% auto;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
+        grid-template-areas:
             "img    list "
             "img  desc "
         ;
@@ -44,12 +44,20 @@ const AboutList = styled.ul`
     font-weight: bold;
     font-style: italic;
     @media (min-width: 768px) {
-        place-self: end start;
+        text-align: center;
     }
 `
 const AboutListItem = styled.li`
     font-size: 1.2rem;
     margin-bottom: .3em;
+    @media (min-width: 1024px) {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    @media (min-width: 1400px) {
+      font-size: 1.8rem;
+      text-align: center;
+    }
 
 `
 const AboutText = styled.p`
@@ -59,7 +67,15 @@ const AboutText = styled.p`
     place-self: center;
     font-size: 1rem;
     @media (min-width: 768px) {
-        place-self: start;
+        text-align: center;
+    }
+    @media (min-width: 1024px) {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    @media (min-width: 1400px) {
+      font-size: 1.8rem;
+      text-align: center;
     }
 `
 
