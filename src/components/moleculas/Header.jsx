@@ -1,13 +1,14 @@
 import React from 'react'
 import styled from 'styled-components';
+import { Link } from 'react-scroll';
 import { BiHome, BiBriefcaseAlt2 } from 'react-icons/bi';
 import { MdOutlineComputer } from 'react-icons/md';
 import { ImNewspaper } from 'react-icons/im';
 import { SiGithubsponsors } from 'react-icons/si';
 import { TiContacts } from 'react-icons/ti';
 import { IconContext } from 'react-icons';
-import logo from '../../assets/img/logowakemedia.png';
 import { PrimaryColor, SecondaryColor } from '../../utils/constants';
+import logo from '../../assets/img/logowakemedia.png';
 import './icons.css';
 
 
@@ -97,6 +98,7 @@ const NavIcon = styled.a`
 	transition: width 0.2s ease-in;
 	text-decoration: none;
 	color: white;
+  cursor: pointer;
 	&:before {
 		position: absolute;
 		z-index: -1;
@@ -151,45 +153,92 @@ const SpanIcon = styled.span`
 const Header = () => {
   return (
     <HeaderContainer>
-      <Logo src={logo} alt="" />
+      <Logo src={logo} alt="Logo de wake creative hub" />
       <NavContainer>
-        <IconContext.Provider value={{className: 'Icons'}}>
-        <NavIcon href="#">
-          <SpanIcon>
-          <BiHome/>
-          </SpanIcon>
-          <SpanTitle >Home</SpanTitle>
-        </NavIcon>
-        <NavIcon href="#">
+        <IconContext.Provider value={{ className: 'Icons' }}>
+          <Link
+            to='Home'
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            <NavIcon>
+            <SpanIcon>
+              <BiHome/>
+            </SpanIcon>
+              <SpanTitle >Home</SpanTitle>
+              </NavIcon>
+          </Link>
+          <Link
+            to='Cards'
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          ><NavIcon>
           <SpanIcon>
             <MdOutlineComputer/>
           </SpanIcon>
           <SpanTitle>Servicios</SpanTitle>
-        </NavIcon>
-        <NavIcon href="#">
+          </NavIcon>
+          </Link>
+          <Link
+            to='About'
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            <NavIcon>
           <SpanIcon>
             <ImNewspaper/>
           </SpanIcon>
-          <SpanTitle>Acerca de</SpanTitle>
-        </NavIcon>
-        <NavIcon href="#">
+              <SpanTitle>Acerca de</SpanTitle>
+              </NavIcon>
+          </Link>
+          <Link
+            to='Portafolio'
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            <NavIcon>
           <SpanIcon>
             <BiBriefcaseAlt2/>
           </SpanIcon>
-          <SpanTitle>Portafolio</SpanTitle>
-        </NavIcon>
-        <NavIcon href="#">
+              <SpanTitle>Portafolio</SpanTitle>
+              </NavIcon>
+          </Link>
+          <Link
+            to='Clientes'
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            <NavIcon>
           <SpanIcon>
             <SiGithubsponsors/>
           </SpanIcon>
-          <SpanTitle>Clientes</SpanTitle>
-        </NavIcon>
-        <NavIcon href="#">
+              <SpanTitle>Clientes</SpanTitle>
+              </NavIcon>
+          </Link>
+          <Link
+            to='Contacto'
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            <NavIcon>
           <SpanIcon>
             <TiContacts/>
           </SpanIcon>
-          <SpanTitle>Contacto</SpanTitle>
-          </NavIcon>
+              <SpanTitle>Contacto</SpanTitle>
+              </NavIcon>
+            </Link>
           </IconContext.Provider>
         </NavContainer>
       </HeaderContainer>

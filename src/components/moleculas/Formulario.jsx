@@ -133,7 +133,7 @@ const SocialLinks = styled.a`
 
 const Formulario = () => {
   return (
-    <Container>
+    <Container id='Contacto'>
       <Title>Contactanos</Title>
       <Text>Estamos listos para ayudarte a cumplir tus sueños, envianos un email!!</Text>
       <FormContainer>
