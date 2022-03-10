@@ -101,9 +101,13 @@ const ImageContainer = styled.div`
   transition: transform 700ms cubic-bezier(0.19, 1, 0.22, 1);
   z-index: 1;
   opacity: 0;
+  transform: translateY(100%);
   ${CardContainer}:hover & {
     opacity: 1;
-    transition: opacity 2s;
+    /* transition:  opacity 2s; */
+    transform: translateY(0%);
+    transition-delay: 1s;
+    transition:  transform .8s;
   }
 `;
 
