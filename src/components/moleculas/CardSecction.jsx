@@ -5,40 +5,41 @@ import {Card1, Card2, Card3, Card4,Card5, Card6} from '../atoms/Cards';
 import { CardsClick1, CardsClick2, CardsClick3, CardsClick4, CardsClick5, CardsClick6, } from '../atoms/CardsClick';
 
 const Container = styled.div`
-  width: 100%;
-  height: auto;
-  padding: 2rem 0;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5rem;
+  padding: 5rem;
   background-color: ${PrimaryColor};
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
-  @media (min-width: 1024px) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2rem;
+  @media (max-width: 780px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+    padding: 5rem;
   }
-`;
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    padding: 4rem;
+  }
+  `;
 
 const CardSecction
   = () => {
   return (
     <Container>
-      <CardsClick1 />
+      {/* <CardsClick1 />
       <CardsClick2 />
       <CardsClick3 />
       <CardsClick4 />
       <CardsClick5 />
-      <CardsClick6 />
+      <CardsClick6 /> */}
 
-      {/* <Card1 />
+      <Card1 />
       <Card2/>
       <Card3/>
       <Card4/>
       <Card5/>
-      <Card6/> */}
+      <Card6/>
     </Container>
   )
 }

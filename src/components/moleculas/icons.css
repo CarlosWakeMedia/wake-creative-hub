@@ -1,0 +1,24 @@
+.Icons {
+  width: 1.5rem;
+  height: auto;
+  color: white;
+}
+@media (min-width: 1024px) {
+  .Icons {
+  width: 1.8rem;
+  padding:0 0.4rem;
+  }
+}
+
+.socialIcons {
+  width: 2.5rem;
+  height: auto;
+  color: white;
+  margin: 0 2rem;
+  transition: all 0.5s;
+}
+
+.socialIcons:hover {
+  color: #FBB04B;
+  transition: all 0.5s;
+}

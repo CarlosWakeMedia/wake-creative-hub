@@ -13,7 +13,7 @@ const ContentContainer = styled.div`
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto;
-    grid-template-areas: 
+    grid-template-areas:
         "img    img "
         "list  list "
         "desc  desc "
@@ -22,18 +22,26 @@ const ContentContainer = styled.div`
     height: auto;
     margin: 0 auto;
     background-color: #F8EEE2;
+    border-radius: 30px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1),
+              0 2px 2px rgba(0,0,0,0.1),
+              0 4px 4px rgba(0,0,0,0.1),
+              0 8px 8px rgba(0,0,0,0.1),
+              0 16px 16px rgba(0,0,0,0.1);
     @media (min-width: 768px) {
         grid-template-columns: 40% auto;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
+        grid-template-areas:
             "img    list "
             "img  desc "
         ;
+        width: 75%;
     }
 `
 const Image = styled.img`
   grid-area: img;
-  width:100%;
+  width:90%;
+  margin: 1rem;
 `
 const AboutList = styled.ul`
     grid-area: list;
@@ -44,12 +52,20 @@ const AboutList = styled.ul`
     font-weight: bold;
     font-style: italic;
     @media (min-width: 768px) {
-        place-self: end start;
+        text-align: center;
     }
 `
 const AboutListItem = styled.li`
     font-size: 1.2rem;
     margin-bottom: .3em;
+    @media (min-width: 1024px) {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    @media (min-width: 1400px) {
+      font-size: 1.8rem;
+      text-align: center;
+    }
 
 `
 const AboutText = styled.p`
@@ -59,31 +75,38 @@ const AboutText = styled.p`
     place-self: center;
     font-size: 1rem;
     @media (min-width: 768px) {
-        place-self: start;
+        text-align: center;
+    }
+    @media (min-width: 1024px) {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    @media (min-width: 1400px) {
+      font-size: 1.8rem;
+      text-align: center;
     }
 `
 
 const AboutSecction = () => {
   return (
     <AboutContainer>
-       <ContentContainer>
-            <Image src={aboutImage}/>
-            <AboutList>
-               <AboutListItem>No somos una consultora.</AboutListItem>
-               <AboutListItem>No somos un estudio.</AboutListItem>
-               <AboutListItem>No somos agencia.</AboutListItem>
-               <AboutListItem>No somos una boutique de servisios.</AboutListItem>
-            </AboutList>
-           
-            <AboutText>
-                <b>WAKE es un hub</b> que busca conocer el
-                status-quo de sus clientes para desarrollar y
-                crear una nueva realidad con soluciones
-                digitales, basadas siempre en datos reales y
-                análisis que impulsan la creatividad en todo
-                sentido.
-            </AboutText>
-       </ContentContainer>
+      <ContentContainer>
+        <Image src={aboutImage}/>
+        <AboutList>
+          <AboutListItem>No somos una consultora.</AboutListItem>
+          <AboutListItem>No somos un estudio.</AboutListItem>
+          <AboutListItem>No somos agencia.</AboutListItem>
+          <AboutListItem>No somos una boutique de servicios.</AboutListItem>
+        </AboutList>
+        <AboutText>
+            <b>WAKE es un hub</b> que busca conocer el
+            status-quo de sus clientes para desarrollar y
+            crear una nueva realidad con soluciones
+            digitales, basadas siempre en datos reales y
+            análisis que impulsan la creatividad en todo
+            sentido.
+        </AboutText>
+      </ContentContainer>
     </AboutContainer>
   )
 }
