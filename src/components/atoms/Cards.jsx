@@ -103,6 +103,7 @@ const ImageContainer = styled.div`
   opacity: 0;
   ${CardContainer}:hover & {
     opacity: 1;
+    transition: opacity 2s;
   }
 `;
 
