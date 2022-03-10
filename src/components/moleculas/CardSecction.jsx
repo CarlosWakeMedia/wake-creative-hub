@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { PrimaryColor } from '../../utils/constants'
 import {Card1, Card2, Card3, Card4,Card5, Card6} from '../atoms/Cards';
-import { CardsClick } from '../atoms/CardsClick';
+import { CardsClick1, CardsClick2, CardsClick3, CardsClick4, CardsClick5, CardsClick6, } from '../atoms/CardsClick';
 
 const Container = styled.div`
   width: 100%;
@@ -26,14 +26,19 @@ const CardSecction
   = () => {
   return (
     <Container>
-      {/* <CardsClick /> */}
+      <CardsClick1 />
+      <CardsClick2 />
+      <CardsClick3 />
+      <CardsClick4 />
+      <CardsClick5 />
+      <CardsClick6 />
 
-      <Card1 />
+      {/* <Card1 />
       <Card2/>
       <Card3/>
       <Card4/>
       <Card5/>
-      <Card6/>
+      <Card6/> */}
     </Container>
   )
 }

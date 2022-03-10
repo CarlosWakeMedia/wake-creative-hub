@@ -1,6 +1,14 @@
 import React from 'react';
 import styled, {keyframes} from 'styled-components';
-import card1 from '../../assets/img/card1.png';
+
+import card1 from '../../assets/img/images-test/imgTest1.svg';
+import card2 from '../../assets/img/images-test/imgTest2.svg';
+import card6 from '../../assets/img/images-test/imgTest3.svg';
+
+import card3 from '../../assets/img/card3.svg';
+import card4 from '../../assets/img/card4.svg';
+import card5 from '../../assets/img/card5.svg';
+
 import data from '../../infoCards.json';
 
 import { White, Black } from '../../utils/constants'
@@ -23,7 +31,7 @@ const ContainerImage = styled.figure`
   height: 550px;
   overflow: hidden;
   border: 4px solid ${Black};
-  transition: all .2s;
+  background-color: ${White};
   z-index: ${props => props.index};
 `;
 const ImageCard = styled.img`
@@ -71,7 +79,7 @@ const ListItem = styled.li`
 
 
 
-const CardsClick = () => {
+const CardsClick1 = () => {
   const [viewInfo, setViewInfo] = React.useState(false)
   
     return (
@@ -100,4 +108,146 @@ const CardsClick = () => {
     )
   }
 
-export { CardsClick }
+
+  const CardsClick2 = () => {
+    const [viewInfo, setViewInfo] = React.useState(false)
+    
+      return (
+        <CardContainer onClick={()=> setViewInfo(!viewInfo)} >
+          <ContainerImage index = {viewInfo ? 0 : 20}>
+              <ImageCard src={card2} alt={data.card2.title} />
+              <TitleCardContainer>
+                <TitleCard>{data.card2.title}</TitleCard>
+              </TitleCardContainer>
+          </ContainerImage>
+  
+            <InfoContainer>
+              <TitleCard>{data.card2.title}</TitleCard>
+              <TextCard>{data.card2.text}</TextCard>
+              <List>
+                  <ListItem>{data.card2.puntos[1] }</ListItem>
+                  <ListItem>{data.card2.puntos[2] }</ListItem>
+                  <ListItem>{data.card2.puntos[3] }</ListItem>
+                  <ListItem>{data.card2.puntos[4] }</ListItem>
+                  <ListItem>{data.card2.puntos[5] }</ListItem>
+                  <ListItem>{data.card2.puntos[6] }</ListItem>
+                  <ListItem>{data.card2.puntos[7] }</ListItem>
+                </List>
+            </InfoContainer>
+        </CardContainer>
+      )
+    }
+    const CardsClick3 = () => {
+      const [viewInfo, setViewInfo] = React.useState(false)
+      
+        return (
+          <CardContainer onClick={()=> setViewInfo(!viewInfo)} >
+            <ContainerImage index = {viewInfo ? 0 : 20}>
+                <ImageCard src={card3} alt={data.card3.title} />
+                <TitleCardContainer>
+                  <TitleCard>{data.card3.title}</TitleCard>
+                </TitleCardContainer>
+            </ContainerImage>
+    
+              <InfoContainer>
+                <TitleCard>{data.card3.title}</TitleCard>
+                <TextCard>{data.card3.text}</TextCard>
+                <List>
+                    <ListItem>{data.card3.puntos[1] }</ListItem>
+                    <ListItem>{data.card3.puntos[2] }</ListItem>
+                    <ListItem>{data.card3.puntos[3] }</ListItem>
+                    <ListItem>{data.card3.puntos[4] }</ListItem>
+                    <ListItem>{data.card3.puntos[5] }</ListItem>
+                    <ListItem>{data.card3.puntos[6] }</ListItem>
+                    <ListItem>{data.card3.puntos[7] }</ListItem>
+                  </List>
+              </InfoContainer>
+          </CardContainer>
+        )
+      }
+      const CardsClick4 = () => {
+        const [viewInfo, setViewInfo] = React.useState(false)
+        
+          return (
+            <CardContainer onClick={()=> setViewInfo(!viewInfo)} >
+              <ContainerImage index = {viewInfo ? 0 : 20}>
+                  <ImageCard src={card4} alt={data.card4.title} />
+                  <TitleCardContainer>
+                    <TitleCard>{data.card4.title}</TitleCard>
+                  </TitleCardContainer>
+              </ContainerImage>
+      
+                <InfoContainer>
+                  <TitleCard>{data.card4.title}</TitleCard>
+                  <TextCard>{data.card4.text}</TextCard>
+                  <List>
+                      <ListItem>{data.card4.puntos[1] }</ListItem>
+                      <ListItem>{data.card4.puntos[2] }</ListItem>
+                      <ListItem>{data.card4.puntos[3] }</ListItem>
+                      <ListItem>{data.card4.puntos[4] }</ListItem>
+                      <ListItem>{data.card4.puntos[5] }</ListItem>
+                      <ListItem>{data.card4.puntos[6] }</ListItem>
+                      <ListItem>{data.card4.puntos[7] }</ListItem>
+                    </List>
+                </InfoContainer>
+            </CardContainer>
+          )
+        }
+        const CardsClick5 = () => {
+          const [viewInfo, setViewInfo] = React.useState(false)
+          
+            return (
+              <CardContainer onClick={()=> setViewInfo(!viewInfo)} >
+                <ContainerImage index = {viewInfo ? 0 : 20}>
+                    <ImageCard src={card5} alt={data.card5.title} />
+                    <TitleCardContainer>
+                      <TitleCard>{data.card5.title}</TitleCard>
+                    </TitleCardContainer>
+                </ContainerImage>
+        
+                  <InfoContainer>
+                    <TitleCard>{data.card5.title}</TitleCard>
+                    <TextCard>{data.card5.text}</TextCard>
+                    <List>
+                        <ListItem>{data.card5.puntos[1] }</ListItem>
+                        <ListItem>{data.card5.puntos[2] }</ListItem>
+                        <ListItem>{data.card5.puntos[3] }</ListItem>
+                        <ListItem>{data.card5.puntos[4] }</ListItem>
+                        <ListItem>{data.card5.puntos[5] }</ListItem>
+                        <ListItem>{data.card5.puntos[6] }</ListItem>
+                        <ListItem>{data.card5.puntos[7] }</ListItem>
+                      </List>
+                  </InfoContainer>
+              </CardContainer>
+            )
+          }
+          const CardsClick6 = () => {
+  const [viewInfo, setViewInfo] = React.useState(false)
+  
+    return (
+      <CardContainer onClick={()=> setViewInfo(!viewInfo)} >
+        <ContainerImage index = {viewInfo ? 0 : 20}>
+            <ImageCard src={card6} alt={data.card6.title} />
+            <TitleCardContainer>
+              <TitleCard>{data.card6.title}</TitleCard>
+            </TitleCardContainer>
+        </ContainerImage>
+
+          <InfoContainer>
+            <TitleCard>{data.card6.title}</TitleCard>
+            <TextCard>{data.card6.text}</TextCard>
+            <List>
+                <ListItem>{data.card6.puntos[1] }</ListItem>
+                <ListItem>{data.card6.puntos[2] }</ListItem>
+                <ListItem>{data.card6.puntos[3] }</ListItem>
+                <ListItem>{data.card6.puntos[4] }</ListItem>
+                <ListItem>{data.card6.puntos[5] }</ListItem>
+                <ListItem>{data.card6.puntos[6] }</ListItem>
+                <ListItem>{data.card6.puntos[7] }</ListItem>
+              </List>
+          </InfoContainer>
+      </CardContainer>
+    )
+  }
+
+export { CardsClick1, CardsClick2, CardsClick3, CardsClick4, CardsClick5, CardsClick6, }
