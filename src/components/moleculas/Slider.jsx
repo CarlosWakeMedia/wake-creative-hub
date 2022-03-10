@@ -61,7 +61,7 @@ const Slider = () => {
   const [selectIndex, setSelectIndex] = useState(0);
   const [selectedImage, setSelectedImage] = useState(images[0]);
   const [loader, setLoader] = useState(false);
-  const [autoPlay, setAutoPlay] = useState(false);
+  const [autoPlay, setAutoPlay] = useState(true);
 
   useEffect(() => {
     if (autoPlay) {
@@ -86,6 +86,7 @@ const Slider = () => {
 
   const previous = () => {
     selectNewImage(selectIndex, images, false)
+    setAutoPlay(false)
   };
 
   const next = () => {
