@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import img1 from '../../assets/img/card1.png';
-import img2 from '../../assets/img/card2.png';
-import img3 from '../../assets/img/card3.png';
-import img4 from '../../assets/img/card4.png';
-import img5 from '../../assets/img/card5.png';
-import img6 from '../../assets/img/card6.png';
+import img1 from '../../assets/img/images-test/imgTest1.svg';
+import img2 from '../../assets/img/images-test/imgTest2.svg';
+import img6 from '../../assets/img/images-test/imgTest3.svg';
+
+import img3 from '../../assets/img/card3.svg';
+import img4 from '../../assets/img/card4.svg';
+import img5 from '../../assets/img/card5.svg';
 import data from '../../infoCards.json';
 
 const CardContainer = styled.div`
