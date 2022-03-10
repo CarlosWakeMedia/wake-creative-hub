@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import img1 from '../../assets/img/card1.png';
-import img2 from '../../assets/img/card2.png';
-import img3 from '../../assets/img/card3.png';
-import img4 from '../../assets/img/card4.png';
-import img5 from '../../assets/img/card5.png';
-import img6 from '../../assets/img/card6.png';
+import img1 from '../../assets/img/images-test/imgTest1.svg';
+import img2 from '../../assets/img/images-test/imgTest2.svg';
+import img6 from '../../assets/img/images-test/imgTest3.svg';
+
+import img3 from '../../assets/img/card3.svg';
+import img4 from '../../assets/img/card4.svg';
+import img5 from '../../assets/img/card5.svg';
 import data from '../../infoCards.json';
 import { BackgroundColor } from '../../utils/constants';
 
@@ -100,8 +101,13 @@ const ImageContainer = styled.div`
   transition: transform 700ms cubic-bezier(0.19, 1, 0.22, 1);
   z-index: 1;
   opacity: 0;
+  transform: translateY(100%);
   ${CardContainer}:hover & {
     opacity: 1;
+    /* transition:  opacity 2s; */
+    transform: translateY(0%);
+    transition-delay: 1s;
+    transition:  transform .8s;
   }
 `;
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { PrimaryColor, SecondaryColor } from '../../utils/constants'
-import clientsImage from '../../assets/img/clientsImage.png';
+import clientsImage from '../../assets/img/images-test/imageClientesTest.svg';
 import clientsLogos from '../../assets/img/clientsLogos.png';
 
 

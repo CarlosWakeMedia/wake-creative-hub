@@ -123,7 +123,10 @@ const Span = styled.span`
 const SocialMediaContainer = styled.div`
   display: flex;
   justify-content: center;
-  gap: 4rem;
+  gap: 0rem;
+  @media (min-width: 1400px) {
+    gap: 4rem;
+  }
 `;
 
 const SocialLinks = styled.a`
