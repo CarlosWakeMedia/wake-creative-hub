@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { SecondaryColor } from '../../utils/constants'
-import aboutImage from '../../assets/img/aboutImage.png';
+import aboutImage from '../../assets/img/images-test/imageTestAbout.svg';
 
 const AboutContainer = styled.section`
   width: 100%;
@@ -14,13 +14,14 @@ const ContentContainer = styled.div`
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto;
     grid-template-areas:
-        "img    img "
-        "list  list "
-        "desc  desc "
+      "list  list "
+      "img    img "
+      "desc  desc "
     ;
     width: 90%;
     height: auto;
     margin: 0 auto;
+    padding: 1em 0;
     background-color: #F8EEE2;
     border-radius: 30px;
     box-shadow: 0 1px 1px rgba(0,0,0,0.1),
@@ -40,6 +41,7 @@ const ContentContainer = styled.div`
 `
 const Image = styled.img`
   grid-area: img;
+  place-self: center;
   width:90%;
   margin: 1rem;
 `
