@@ -4,6 +4,8 @@ import { BackgroundColor } from '../../utils/constants'
 import { Title, Text } from './Briefcase';
 import { IconContext } from "react-icons";
 import { BsFacebook, BsTwitter, BsInstagram, BsYoutube } from 'react-icons/bs';
+import '../moleculas/icons.css';
+
 
 const Container = styled.section`
   width: 100%;
@@ -70,6 +72,7 @@ const Input = styled.input`
 `;
 
 const SubText = styled(Text)`
+text-align: start;
   ::before {
     content:attr(type);
     display:block;
@@ -146,7 +149,7 @@ const Formulario = () => {
         </InfoContainer>
       </Form>
         <SocialMediaContainer>
-          <IconContext.Provider value={{color: 'white', size: '2rem' }}>
+          <IconContext.Provider value={{className: 'socialIcons'}}>
             <SocialLinks href="https://twitter.com/wakemediamx/"><BsTwitter/></SocialLinks>
             <SocialLinks href="https://www.facebook.com/wakemediamx"><BsFacebook/></SocialLinks>
             <SocialLinks href="https://www.instagram.com/wakemediamx/"><BsInstagram/></SocialLinks>

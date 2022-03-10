@@ -7,6 +7,7 @@ import img4 from '../../assets/img/card4.png';
 import img5 from '../../assets/img/card5.png';
 import img6 from '../../assets/img/card6.png';
 import data from '../../infoCards.json';
+import { BackgroundColor } from '../../utils/constants';
 
 const CardContainer = styled.div`
   position: relative;
@@ -14,12 +15,12 @@ const CardContainer = styled.div`
   align-items: flex-end;
   overflow: hidden;
   padding: 1rem;
-  width: 90%;
+  width: 100%;
   height: 90%;
   text-align: center;
   color: black;
   border-radius: 30px;
-  background-color: #0a0a0a;
+  background-color: ${BackgroundColor};
   box-shadow: 0 1px 1px rgba(0,0,0,0.1),
               0 2px 2px rgba(0,0,0,0.1),
               0 4px 4px rgba(0,0,0,0.1),
@@ -83,6 +84,10 @@ const CardContainer = styled.div`
         :before { transform: translateY(-100%); }
         :after { transform: translateY(-50%); }
       }
+      @media (min-width: 1024px) {
+        width: 100%;
+        height:100%;
+    }
 `;
 
 const ImageContainer = styled.div`

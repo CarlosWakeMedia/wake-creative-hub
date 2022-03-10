@@ -40,7 +40,7 @@ const ContentContainer = styled.div`
 `
 const Image = styled.img`
   grid-area: img;
-  width:100%;
+  width:90%;
   margin: 1rem;
 `
 const AboutList = styled.ul`
@@ -90,24 +90,23 @@ const AboutText = styled.p`
 const AboutSecction = () => {
   return (
     <AboutContainer>
-       <ContentContainer>
-            <Image src={aboutImage}/>
-            <AboutList>
-               <AboutListItem>No somos una consultora.</AboutListItem>
-               <AboutListItem>No somos un estudio.</AboutListItem>
-               <AboutListItem>No somos agencia.</AboutListItem>
-               <AboutListItem>No somos una boutique de servisios.</AboutListItem>
-            </AboutList>
-           
-            <AboutText>
-                <b>WAKE es un hub</b> que busca conocer el
-                status-quo de sus clientes para desarrollar y
-                crear una nueva realidad con soluciones
-                digitales, basadas siempre en datos reales y
-                análisis que impulsan la creatividad en todo
-                sentido.
-            </AboutText>
-       </ContentContainer>
+      <ContentContainer>
+        <Image src={aboutImage}/>
+        <AboutList>
+          <AboutListItem>No somos una consultora.</AboutListItem>
+          <AboutListItem>No somos un estudio.</AboutListItem>
+          <AboutListItem>No somos agencia.</AboutListItem>
+          <AboutListItem>No somos una boutique de servicios.</AboutListItem>
+        </AboutList>
+        <AboutText>
+            <b>WAKE es un hub</b> que busca conocer el
+            status-quo de sus clientes para desarrollar y
+            crear una nueva realidad con soluciones
+            digitales, basadas siempre en datos reales y
+            análisis que impulsan la creatividad en todo
+            sentido.
+        </AboutText>
+      </ContentContainer>
     </AboutContainer>
   )
 }
