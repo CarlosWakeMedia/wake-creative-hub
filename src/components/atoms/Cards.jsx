@@ -27,6 +27,9 @@ const CardContainer = styled.div`
               0 4px 4px rgba(0,0,0,0.1),
               0 8px 8px rgba(0,0,0,0.1),
               0 16px 16px rgba(0,0,0,0.1);
+  @media (min-width: 1024px) {
+    min-height:450px;
+  }
   &:before {
     content: '';
     position: absolute;
@@ -36,6 +39,7 @@ const CardContainer = styled.div`
     height: 110%;
     background-size: cover;
     background-position: 0 0;
+    background-position: center;
     transition: transform calc(700ms * 1.5) cubic-bezier(0.19, 1, 0.22, 1);
     pointer-events: none;
   }
@@ -67,6 +71,7 @@ const CardContainer = styled.div`
       hsla(0, 0%, 0%, 0.762) 94.1%,
       hsla(0, 0%, 0%, 0.790) 100%
     );
+    background-position:center center;
     transform: translateY(-100%);
     transition: transform calc(700ms * 2) cubic-bezier(0.19, 1, 0.22, 1);
   }

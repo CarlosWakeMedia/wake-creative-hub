@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import './icons.css'
-import slider1 from '../../assets/img/Slider1.png';
-import slider2 from '../../assets/img/Slider2.png';
-import slider3 from '../../assets/img/Slider3.png';
+import slider1 from '../../assets/img/slider1.svg';
+import slider2 from '../../assets/img/slider2.svg';
+import slider3 from '../../assets/img/slider3.svg';
 import { AiFillCaretLeft, AiFillCaretRight } from 'react-icons/ai';
 import { IconContext } from 'react-icons';
 
