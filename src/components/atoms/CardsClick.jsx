@@ -57,7 +57,7 @@ const TitleCard = styled.h3`
 
 const InfoContainer = styled.div`
   position: absolute;
-  top: -5%;
+  top: 0%;
   left: 5%;
   width: 90%;
   height: 90%;
