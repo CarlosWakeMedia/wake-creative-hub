@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { PrimaryColor } from '../../utils/constants'
-import { CardsClick1, CardsClick2, CardsClick3, CardsClick4, CardsClick5, CardsClick6, } from '../atoms/CardsClick'; 
+import { Card1, Card2, Card3, Card4, Card5, Card6, } from '../atoms/Cards';
 
 const CardSecctionContainer = styled.section`
   width: 100%;
@@ -11,8 +11,8 @@ const CardSecctionContainer = styled.section`
 
 const Container = styled.div`
   display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(21em, 1fr));
-	grid-gap: 1.5em;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 3.5em;
   align-content: center ;
   width: 90%;
   max-width: 1400px;
@@ -25,12 +25,12 @@ const CardSecction
   return (
     <CardSecctionContainer>
       <Container id='Cards'>
-        <CardsClick1 />
-        <CardsClick2/>
-        <CardsClick3/>
-        <CardsClick4/>
-        <CardsClick5/>
-        <CardsClick6/>
+        <Card1 />
+        <Card2/>
+        <Card3/>
+        <Card4/>
+        <Card5/>
+        <Card6/>
       </Container>
     </CardSecctionContainer>
   )

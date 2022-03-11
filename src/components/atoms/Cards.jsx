@@ -102,7 +102,8 @@ const ImageContainer = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 1rem;
+  height: 100%;
+  padding-top: 6rem;
   transition: transform 700ms cubic-bezier(0.19, 1, 0.22, 1);
   z-index: 1;
   opacity: 0;
@@ -117,27 +118,28 @@ const ImageContainer = styled.div`
 `;
 
 const TituloCard = styled.h2`
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-family: 'Fraunces', serif;
   font-weight: bold;
   line-height: 1.2;
   text-align: center;
+  margin: 0;
 `;
 
 const TextCard = styled.p`
-  font-size: 0.8rem;
-  padding: 0 0.2rem;
+  font-size: 1.2rem;
+  padding: 0 0.5rem;
   font-style: italic;
   line-height: 1.35;
 `;
 
 const List = styled.ul`
   margin: 0;
-  padding: 0 1.2rem;
+  padding: 0 3rem;
 `;
 
 const ListItem = styled.li`
-  font-size: 0.8rem;
+  font-size: 1.2rem;
 `;
 
 export const Card1 = () => {
@@ -147,13 +149,13 @@ export const Card1 = () => {
         <TituloCard>{data.card1.title }</TituloCard>
         <TextCard>{data.card1.text }</TextCard>
         <List>
+          <ListItem>{data.card1.puntos[0] }</ListItem>
           <ListItem>{data.card1.puntos[1] }</ListItem>
           <ListItem>{data.card1.puntos[2] }</ListItem>
           <ListItem>{data.card1.puntos[3] }</ListItem>
           <ListItem>{data.card1.puntos[4] }</ListItem>
           <ListItem>{data.card1.puntos[5] }</ListItem>
           <ListItem>{data.card1.puntos[6] }</ListItem>
-          <ListItem>{data.card1.puntos[7] }</ListItem>
         </List>
       </ImageContainer>
     </CardContainer>
@@ -166,12 +168,12 @@ export const Card2 = () => {
         <TituloCard>{data.card4.title }</TituloCard>
         <TextCard>{data.card4.text }</TextCard>
         <List>
+          <ListItem>{data.card4.puntos[0] }</ListItem>
           <ListItem>{data.card4.puntos[1] }</ListItem>
           <ListItem>{data.card4.puntos[2] }</ListItem>
           <ListItem>{data.card4.puntos[3] }</ListItem>
           <ListItem>{data.card4.puntos[4] }</ListItem>
           <ListItem>{data.card4.puntos[5] }</ListItem>
-          <ListItem>{data.card4.puntos[6] }</ListItem>
         </List>
 
       </ImageContainer>
@@ -185,11 +187,11 @@ export const Card3 = () => {
         <TituloCard>{data.card2.title }</TituloCard>
         <TextCard>{data.card2.text }</TextCard>
         <List>
+          <ListItem>{data.card2.puntos[0] }</ListItem>
           <ListItem>{data.card2.puntos[1] }</ListItem>
           <ListItem>{data.card2.puntos[2] }</ListItem>
           <ListItem>{data.card2.puntos[3] }</ListItem>
           <ListItem>{data.card2.puntos[4] }</ListItem>
-          <ListItem>{data.card2.puntos[5] }</ListItem>
         </List>
       </ImageContainer>
     </CardContainer>
@@ -202,12 +204,12 @@ export const Card4 = () => {
         <TituloCard>{data.card5.title }</TituloCard>
         <TextCard>{data.card5.text }</TextCard>
         <List>
+          <ListItem>{data.card5.puntos[0] }</ListItem>
           <ListItem>{data.card5.puntos[1] }</ListItem>
           <ListItem>{data.card5.puntos[2] }</ListItem>
           <ListItem>{data.card5.puntos[3] }</ListItem>
           <ListItem>{data.card5.puntos[4] }</ListItem>
           <ListItem>{data.card5.puntos[5] }</ListItem>
-          <ListItem>{data.card5.puntos[6] }</ListItem>
         </List>
       </ImageContainer>
     </CardContainer>
@@ -220,9 +222,9 @@ export const Card5 = () => {
         <TituloCard>{data.card6.title }</TituloCard>
         <TextCard>{data.card6.text }</TextCard>
         <List>
+          <ListItem>{data.card6.puntos[0] }</ListItem>
           <ListItem>{data.card6.puntos[1] }</ListItem>
           <ListItem>{data.card6.puntos[2] }</ListItem>
-          <ListItem>{data.card6.puntos[3] }</ListItem>
         </List>
       </ImageContainer>
     </CardContainer>
@@ -235,10 +237,10 @@ export const Card6 = () => {
         <TituloCard>{data.card3.title }</TituloCard>
         <TextCard>{data.card3.text }</TextCard>
         <List>
+          <ListItem>{data.card3.puntos[0] }</ListItem>
           <ListItem>{data.card3.puntos[1] }</ListItem>
           <ListItem>{data.card3.puntos[2] }</ListItem>
           <ListItem>{data.card3.puntos[3] }</ListItem>
-          <ListItem>{data.card3.puntos[4] }</ListItem>
         </List>
       </ImageContainer>
     </CardContainer>
