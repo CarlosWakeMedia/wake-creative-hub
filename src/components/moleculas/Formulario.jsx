@@ -14,6 +14,7 @@ const Container = styled.section`
   color: white;
   text-align: center;
   padding: 2rem 0;
+  overflow:hidden;
 `;
 
 const FormContainer = styled.div`
@@ -123,7 +124,8 @@ const Span = styled.span`
 const SocialMediaContainer = styled.div`
   display: flex;
   justify-content: center;
-  gap: 0rem;
+  flex-wrap: wrap;
+  gap: 1rem;
   @media (min-width: 1400px) {
     gap: 4rem;
   }
@@ -132,6 +134,9 @@ const SocialMediaContainer = styled.div`
 const SocialLinks = styled.a`
   width: auto;
   height: auto;
+  svg{
+    margin: 10px;
+  }
 `;
 
 const Formulario = () => {
