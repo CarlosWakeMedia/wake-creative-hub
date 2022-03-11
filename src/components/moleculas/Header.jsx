@@ -8,7 +8,7 @@ import { SiGithubsponsors } from 'react-icons/si';
 import { TiContacts } from 'react-icons/ti';
 import { IconContext } from 'react-icons';
 import { PrimaryColor, SecondaryColor } from '../../utils/constants';
-import logo from '../../assets/img/logowakemedia.png';
+import logo from '../../assets/img/logo.svg';
 import './icons.css';
 
 
@@ -39,18 +39,17 @@ const Logo = styled.img`
   width: 45%;
   height: auto;
   margin: 0.6rem;
+  z-index: 10;
   @media (min-width: 768px) {
     margin: 1rem;
     width: 25%;
   }
   @media (min-width: 1024px) {
-    margin: 1rem;
     width: 35%;
+    max-width: 13em;
   }
   @media (min-width: 1440px) {
-    margin: 1rem;
     width: 20%;
-    height: 7rem;
   }
 `;
 
