@@ -93,7 +93,7 @@ const AboutSecction = () => {
   return (
     <AboutContainer id='About'>
       <ContentContainer>
-        <Image src={aboutImage}/>
+        <Image src={aboutImage} alt={'Imagen del Acerca de wake creative hub'} />
         <AboutList>
           <AboutListItem>No somos una consultora.</AboutListItem>
           <AboutListItem>No somos un estudio.</AboutListItem>

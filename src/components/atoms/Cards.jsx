@@ -15,12 +15,12 @@ const CardContainer = styled.div`
   display: flex;
   align-items: flex-end;
   overflow: hidden;
-  padding: 1rem;
   width: 100%;
   height: 90%;
   text-align: center;
   color: black;
   border-radius: 30px;
+  border: 2px solid black;
   background-color: ${BackgroundColor};
   box-shadow: 0 1px 1px rgba(0,0,0,0.1),
               0 2px 2px rgba(0,0,0,0.1),
