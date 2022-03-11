@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { SecondaryColor } from '../../utils/constants'
-import aboutImage from '../../assets/img/images-test/imageTestAbout.svg';
+import aboutImage from '../../assets/img/aboutImage.svg';
 
 const AboutContainer = styled.section`
   width: 100%;
