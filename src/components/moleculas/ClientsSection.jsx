@@ -49,7 +49,7 @@ const MarkLogo = styled.img`
 `
 const ClientsSection = () => {
   return (
-    <ClientsContainer>
+    <ClientsContainer id='Clientes'>
       <ContentContainer>
         <Image src={clientsImage}/>
         <MarksContainer>

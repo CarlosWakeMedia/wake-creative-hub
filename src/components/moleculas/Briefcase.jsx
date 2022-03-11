@@ -27,7 +27,7 @@ export const Text = styled.p`
 
 const Briefcase = () => {
   return (
-    <ContainerBriefcase>
+    <ContainerBriefcase id='Portafolio'>
       <Title>¿Quieres Conocer parte de nuestro trabajo?</Title>
       <Text>Descarga nuestra presentación</Text>
       <Button

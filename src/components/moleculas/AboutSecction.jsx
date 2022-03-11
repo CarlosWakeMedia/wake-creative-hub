@@ -91,7 +91,7 @@ const AboutText = styled.p`
 
 const AboutSecction = () => {
   return (
-    <AboutContainer>
+    <AboutContainer id='About'>
       <ContentContainer>
         <Image src={aboutImage}/>
         <AboutList>

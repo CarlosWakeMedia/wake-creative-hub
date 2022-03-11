@@ -22,3 +22,14 @@
   color: #FBB04B;
   transition: all 0.5s;
 }
+.iconSlider {
+  width: 2rem;
+  height: 3rem;
+  color: white;
+  opacity: 0.6;
+  margin: 0;
+  cursor: pointer;
+}
+.iconSlider:hover {
+  color: #8590c8;
+}
