@@ -24,11 +24,18 @@ const move = keyframes`
 const CardContainer = styled.div`
   position: relative;
   cursor: pointer;
+  width: 90%;
+  min-width: 300px;
+  max-width: 550px;
+  height: auto;
 `;
 const ContainerImage = styled.figure`
   position: relative;
-  width: 550px;
-  height: 550px;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 90%;
+  margin: 0;
   overflow: hidden;
   border: 4px solid ${Black};
   background-color: ${White};
@@ -41,22 +48,21 @@ const TitleCardContainer = styled.figcaption`
   position: absolute;
   bottom: 0px;
   width: 100%;
-  height: 5em;
   background-color: ${White};
 `;
 const TitleCard = styled.h3`
   padding-left: 1em;
-  font-size: 2.25rem;
+  font-size: 1.25rem;
 `;
 
 const InfoContainer = styled.div`
   position: absolute;
-  top: 15px;
-  right: 40px;
-  width: 550px;
-  height: 550px;
-  font-size: 1.5rem;
-  overflow: hidden;
+  top: -5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  font-size: 1rem;
+  overflow-y: scroll;
   border: 4px solid ${Black};
   background-color: ${White};
   z-index: 10;
@@ -95,13 +101,9 @@ const CardsClick1 = () => {
             <TitleCard>{data.card1.title}</TitleCard>
             <TextCard>{data.card1.text}</TextCard>
             <List>
-                <ListItem>{data.card1.puntos[1] }</ListItem>
-                <ListItem>{data.card1.puntos[2] }</ListItem>
-                <ListItem>{data.card1.puntos[3] }</ListItem>
-                <ListItem>{data.card1.puntos[4] }</ListItem>
-                <ListItem>{data.card1.puntos[5] }</ListItem>
-                <ListItem>{data.card1.puntos[6] }</ListItem>
-                <ListItem>{data.card1.puntos[7] }</ListItem>
+                {data.card1.puntos.map(item => (
+                    <ListItem key={item}>{item}</ListItem>
+                ))}
               </List>
           </InfoContainer>
       </CardContainer>
@@ -124,14 +126,10 @@ const CardsClick1 = () => {
             <InfoContainer>
               <TitleCard>{data.card2.title}</TitleCard>
               <TextCard>{data.card2.text}</TextCard>
-              <List>
-                  <ListItem>{data.card2.puntos[1] }</ListItem>
-                  <ListItem>{data.card2.puntos[2] }</ListItem>
-                  <ListItem>{data.card2.puntos[3] }</ListItem>
-                  <ListItem>{data.card2.puntos[4] }</ListItem>
-                  <ListItem>{data.card2.puntos[5] }</ListItem>
-                  <ListItem>{data.card2.puntos[6] }</ListItem>
-                  <ListItem>{data.card2.puntos[7] }</ListItem>
+                <List>
+                  {data.card2.puntos.map(item => (
+                      <ListItem >{item}</ListItem>
+                  ))}
                 </List>
             </InfoContainer>
         </CardContainer>
@@ -153,14 +151,10 @@ const CardsClick1 = () => {
                 <TitleCard>{data.card3.title}</TitleCard>
                 <TextCard>{data.card3.text}</TextCard>
                 <List>
-                    <ListItem>{data.card3.puntos[1] }</ListItem>
-                    <ListItem>{data.card3.puntos[2] }</ListItem>
-                    <ListItem>{data.card3.puntos[3] }</ListItem>
-                    <ListItem>{data.card3.puntos[4] }</ListItem>
-                    <ListItem>{data.card3.puntos[5] }</ListItem>
-                    <ListItem>{data.card3.puntos[6] }</ListItem>
-                    <ListItem>{data.card3.puntos[7] }</ListItem>
-                  </List>
+                  {data.card3.puntos.map(item => (
+                      <ListItem >{item}</ListItem>
+                  ))}
+                </List>
               </InfoContainer>
           </CardContainer>
         )
@@ -181,14 +175,10 @@ const CardsClick1 = () => {
                   <TitleCard>{data.card4.title}</TitleCard>
                   <TextCard>{data.card4.text}</TextCard>
                   <List>
-                      <ListItem>{data.card4.puntos[1] }</ListItem>
-                      <ListItem>{data.card4.puntos[2] }</ListItem>
-                      <ListItem>{data.card4.puntos[3] }</ListItem>
-                      <ListItem>{data.card4.puntos[4] }</ListItem>
-                      <ListItem>{data.card4.puntos[5] }</ListItem>
-                      <ListItem>{data.card4.puntos[6] }</ListItem>
-                      <ListItem>{data.card4.puntos[7] }</ListItem>
-                    </List>
+                    {data.card4.puntos.map(item => (
+                        <ListItem >{item}</ListItem>
+                    ))}
+                  </List>
                 </InfoContainer>
             </CardContainer>
           )
@@ -209,21 +199,16 @@ const CardsClick1 = () => {
                     <TitleCard>{data.card5.title}</TitleCard>
                     <TextCard>{data.card5.text}</TextCard>
                     <List>
-                        <ListItem>{data.card5.puntos[1] }</ListItem>
-                        <ListItem>{data.card5.puntos[2] }</ListItem>
-                        <ListItem>{data.card5.puntos[3] }</ListItem>
-                        <ListItem>{data.card5.puntos[4] }</ListItem>
-                        <ListItem>{data.card5.puntos[5] }</ListItem>
-                        <ListItem>{data.card5.puntos[6] }</ListItem>
-                        <ListItem>{data.card5.puntos[7] }</ListItem>
-                      </List>
+                      {data.card5.puntos.map(item => (
+                        <ListItem >{item}</ListItem>
+                      ))}
+                    </List>
                   </InfoContainer>
               </CardContainer>
             )
           }
-          const CardsClick6 = () => {
+const CardsClick6 = () => {
   const [viewInfo, setViewInfo] = React.useState(false)
-  
     return (
       <CardContainer onClick={()=> setViewInfo(!viewInfo)} >
         <ContainerImage index = {viewInfo ? 0 : 20}>
@@ -237,14 +222,10 @@ const CardsClick1 = () => {
             <TitleCard>{data.card6.title}</TitleCard>
             <TextCard>{data.card6.text}</TextCard>
             <List>
-                <ListItem>{data.card6.puntos[1] }</ListItem>
-                <ListItem>{data.card6.puntos[2] }</ListItem>
-                <ListItem>{data.card6.puntos[3] }</ListItem>
-                <ListItem>{data.card6.puntos[4] }</ListItem>
-                <ListItem>{data.card6.puntos[5] }</ListItem>
-                <ListItem>{data.card6.puntos[6] }</ListItem>
-                <ListItem>{data.card6.puntos[7] }</ListItem>
-              </List>
+              {data.card6.puntos.map(item => (
+                  <ListItem >{item}</ListItem>
+              ))}
+            </List>
           </InfoContainer>
       </CardContainer>
     )
