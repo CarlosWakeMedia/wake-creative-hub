@@ -40,6 +40,7 @@ const ContainerImage = styled.figure`
   border: 4px solid ${Black};
   background-color: ${White};
   z-index: ${props => props.index};
+  transition: all .5s ease;
 `;
 const ImageCard = styled.img`
   width: 100%;
@@ -50,14 +51,9 @@ const TitleCardContainer = styled.figcaption`
   width: 100%;
   background-color: ${White};
 `;
-const TitleCard = styled.h3`
-  padding-left: 1em;
-  font-size: 1.25rem;
-`;
-
 const InfoContainer = styled.div`
   position: absolute;
-  top: 0%;
+  top: 0px;
   left: 5%;
   width: 90%;
   height: 90%;
@@ -65,19 +61,32 @@ const InfoContainer = styled.div`
   overflow-y: scroll;
   border: 4px solid ${Black};
   background-color: ${White};
+  color: ${Black};
   z-index: 10;
 
   animation: ${move} 1s 1;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 `;
+const TitleCard = styled.h3`
+  padding-left: 1em;
+  font-size: 1.25rem;
+  transform: translateX( ${props => props.isWatch}% );
+  transition: transform .5s ease-in-out;
+`;
 const TextCard = styled.p`
   width: 80%;
   margin: 0 auto .8em;
+  transform: translateX( ${props => props.isWatch}% );
+  transition: transform .5s ease-in-out;
+  transition-delay: .2s;
 `;
 const List = styled.ul`
   width: 80%;
   margin: 0 auto;
+  transform: translateX( ${props => props.isWatch}% );
+  transition: transform .5s ease-in-out;
+  transition-delay: .4s;
 `;
 const ListItem = styled.li`
   
@@ -98,13 +107,13 @@ const CardsClick1 = () => {
         </ContainerImage>
 
           <InfoContainer>
-            <TitleCard>{data.card1.title}</TitleCard>
-            <TextCard>{data.card1.text}</TextCard>
-            <List>
-                {data.card1.puntos.map(item => (
-                    <ListItem key={item}>{item}</ListItem>
-                ))}
-              </List>
+              <TitleCard isWatch = {viewInfo ? 0 : -100}>{data.card1.title}</TitleCard>
+              <TextCard isWatch = {viewInfo ? 0 : -100}>{data.card1.text}</TextCard>
+              <List isWatch = {viewInfo ? 0 : -100}>
+                  {data.card1.puntos.map(item => (
+                      <ListItem key={item}>{item}</ListItem>
+                  ))}
+                </List>
           </InfoContainer>
       </CardContainer>
     )
@@ -123,15 +132,15 @@ const CardsClick1 = () => {
               </TitleCardContainer>
           </ContainerImage>
   
-            <InfoContainer>
-              <TitleCard>{data.card2.title}</TitleCard>
-              <TextCard>{data.card2.text}</TextCard>
-                <List>
+          <InfoContainer>
+              <TitleCard isWatch = {viewInfo ? 0 : -100}>{data.card2.title}</TitleCard>
+              <TextCard isWatch = {viewInfo ? 0 : -100}>{data.card2.text}</TextCard>
+                <List isWatch = {viewInfo ? 0 : -100}>
                   {data.card2.puntos.map(item => (
-                      <ListItem >{item}</ListItem>
+                      <ListItem key={item}>{item}</ListItem>
                   ))}
                 </List>
-            </InfoContainer>
+              </InfoContainer>
         </CardContainer>
       )
     }
@@ -148,11 +157,11 @@ const CardsClick1 = () => {
             </ContainerImage>
     
               <InfoContainer>
-                <TitleCard>{data.card3.title}</TitleCard>
-                <TextCard>{data.card3.text}</TextCard>
-                <List>
+                <TitleCard isWatch = {viewInfo ? 0 : -100}>{data.card3.title}</TitleCard>
+                <TextCard isWatch = {viewInfo ? 0 : -100}>{data.card3.text}</TextCard>
+                <List isWatch = {viewInfo ? 0 : -100}>
                   {data.card3.puntos.map(item => (
-                      <ListItem >{item}</ListItem>
+                      <ListItem key={item}>{item}</ListItem>
                   ))}
                 </List>
               </InfoContainer>
@@ -172,11 +181,11 @@ const CardsClick1 = () => {
               </ContainerImage>
       
                 <InfoContainer>
-                  <TitleCard>{data.card4.title}</TitleCard>
-                  <TextCard>{data.card4.text}</TextCard>
-                  <List>
+                  <TitleCard isWatch = {viewInfo ? 0 : -100}>{data.card4.title}</TitleCard>
+                  <TextCard isWatch = {viewInfo ? 0 : -100}>{data.card4.text}</TextCard>
+                  <List isWatch = {viewInfo ? 0 : -100}>
                     {data.card4.puntos.map(item => (
-                        <ListItem >{item}</ListItem>
+                        <ListItem key={item}>{item}</ListItem>
                     ))}
                   </List>
                 </InfoContainer>
@@ -196,11 +205,11 @@ const CardsClick1 = () => {
                 </ContainerImage>
         
                   <InfoContainer>
-                    <TitleCard>{data.card5.title}</TitleCard>
-                    <TextCard>{data.card5.text}</TextCard>
-                    <List>
+                    <TitleCard isWatch = {viewInfo ? 0 : -100}>{data.card5.title}</TitleCard>
+                    <TextCard isWatch = {viewInfo ? 0 : -100}>{data.card5.text}</TextCard>
+                    <List isWatch = {viewInfo ? 0 : -100}>
                       {data.card5.puntos.map(item => (
-                        <ListItem >{item}</ListItem>
+                        <ListItem key={item}>{item}</ListItem>
                       ))}
                     </List>
                   </InfoContainer>
@@ -219,11 +228,11 @@ const CardsClick6 = () => {
         </ContainerImage>
 
           <InfoContainer>
-            <TitleCard>{data.card6.title}</TitleCard>
-            <TextCard>{data.card6.text}</TextCard>
-            <List>
+            <TitleCard isWatch = {viewInfo ? 0 : -100}>{data.card6.title}</TitleCard>
+            <TextCard isWatch = {viewInfo ? 0 : -100}>{data.card6.text}</TextCard>
+            <List isWatch = {viewInfo ? 0 : -100}>
               {data.card6.puntos.map(item => (
-                  <ListItem >{item}</ListItem>
+                  <ListItem key={item}>{item}</ListItem>
               ))}
             </List>
           </InfoContainer>

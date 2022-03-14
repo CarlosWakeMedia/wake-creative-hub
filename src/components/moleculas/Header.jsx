@@ -7,7 +7,7 @@ import { ImNewspaper } from 'react-icons/im';
 import { SiGithubsponsors } from 'react-icons/si';
 import { TiContacts } from 'react-icons/ti';
 import { IconContext } from 'react-icons';
-import { PrimaryColor, SecondaryColor } from '../../utils/constants';
+import { PrimaryColor, SecondaryColor, Black } from '../../utils/constants';
 import logo from '../../assets/img/logo.svg';
 import './icons.css';
 
@@ -17,7 +17,8 @@ const HeaderContainer = styled.div`
   height: auto;
   position: fixed;
   z-index: 1000;
-  padding-bottom: 1rem;
+  /* padding-bottom: 1rem; */
+  margin-bottom: 1em;
   top: 0;
   left: 0;
   background-color: ${PrimaryColor};
@@ -26,11 +27,11 @@ const HeaderContainer = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 3px;
-  box-shadow: 0 1px 1px rgba(0,0,0,0.1),
+  /* box-shadow: 0 1px 1px rgba(0,0,0,0.1),
               0 2px 2px rgba(0,0,0,0.1),
               0 4px 4px rgba(0,0,0,0.1),
               0 8px 8px rgba(0,0,0,0.1),
-              0 16px 16px rgba(0,0,0,0.1);
+              0 16px 16px rgba(0,0,0,0.1); */
   @media (min-width: 768px) {
     width: 100%;
     flex-direction: row;
@@ -47,21 +48,11 @@ const HeaderContainer = styled.div`
 `;
 
 const Logo = styled.img`
-  width: 45%;
+  width: 25%;
+  max-width: 8em;
   height: auto;
   margin: 0.6rem;
   z-index: 10;
-  @media (min-width: 768px) {
-    margin: 1rem;
-    width: 25%;
-  }
-  @media (min-width: 1024px) {
-    width: 35%;
-    max-width: 13em;
-  }
-  @media (min-width: 1440px) {
-    width: 20%;
-  }
 `;
 
 const NavContainer = styled.div`
