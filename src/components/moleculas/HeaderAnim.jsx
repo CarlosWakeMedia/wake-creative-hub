@@ -1,13 +1,20 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, {keyframes} from 'styled-components';
 
 import CloudImage from '../../assets/img/CloudImage';
 import image from '../../assets/img/imageHeader.svg'
+import { Black } from '../../utils/constants';
+
+const moveText = keyframes`
+    to{
+        transform: translateX(0%);
+    }
+`;
 
 const HeaderContainer = styled.div`
     position: relative;
     width: 100%;
-    height: 95vh;
+    height: 80vh;
     overflow: hidden;
     background-color: #FBB04B;
     &:before {
@@ -27,14 +34,43 @@ const Image = styled.img`
     z-index: 20;
     padding-top: 3em;
 `
-
-
+const Title = styled.h1`
+    position: absolute;
+    top: calc(50% - 250px);
+    left: calc(50% - 60px);
+    color: ${Black};
+    z-index: 50;
+    font-size: 6rem;
+    font-style: italic;
+    overflow: hidden;
+`
+const TitleWake = styled.span`
+    display: block;
+    transform: translateX(-100%);
+    animation: ${moveText} .5s 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+`
+const TitleCreative = styled.span`
+    display: block;
+    padding-left: 2em;
+    font-size: 3rem;
+    transform: translateX(-100%);
+    animation: ${moveText} .5s 1;
+    animation-delay: .6s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+`
 
 function HeaderAnim() {
   return (
     <HeaderContainer>
         <CloudImage/>
         <Image src={image} />
+        <Title>
+            <TitleWake>Wake</TitleWake> 
+            <TitleCreative>Creative Hub</TitleCreative>
+        </Title>
     </HeaderContainer>
   )
 }

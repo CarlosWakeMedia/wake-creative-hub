@@ -49,7 +49,7 @@ const ImageSVG = styled.svg`
         animation-fill-mode: forwards;
     }
     .cloud3{
-        transform: translateX(40%);
+        transform: translateX(45%);
         animation: animCloud 45s infinite linear;
         animation-fill-mode: forwards;
       }
@@ -58,7 +58,7 @@ const ImageSVG = styled.svg`
           transform: translateX(100%);
         }
         to{
-          transform: translateX(-100%);
+          transform: translateX(-200%);
         }
       }
 

@@ -41,17 +41,6 @@ const Logo = styled.img`
   height: auto;
   margin: 0.6rem;
   z-index: 10;
-  /* @media (min-width: 768px) {
-    margin: 1rem;
-    width: 15%;
-  }
-  @media (min-width: 1024px) {
-    width: 15%;
-    max-width: 9em;
-  }
-  @media (min-width: 1440px) {
-    width: 20%;
-  } */
 `;
 
 const NavContainer = styled.div`
