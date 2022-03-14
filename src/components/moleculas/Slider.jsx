@@ -10,13 +10,13 @@ import { IconContext } from 'react-icons';
 const ContainerCarrousel = styled.div`
   width: 100%;
   height: auto;
+  margin-top: 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   @media (min-width: 768px) {
     width: 90%;
-    margin: 0 auto;
   }
 `;
 

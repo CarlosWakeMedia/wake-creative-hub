@@ -8,6 +8,8 @@ import { PrimaryColor } from '../../utils/constants.jsx';
 const HomeContainer = styled.header`
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: auto;
   background-color: ${PrimaryColor};

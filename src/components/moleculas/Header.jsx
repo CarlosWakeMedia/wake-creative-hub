@@ -15,11 +15,22 @@ import './icons.css';
 const HeaderContainer = styled.div`
   width: 100%;
   height: auto;
+  position: fixed;
+  z-index: 1000;
+  padding-bottom: 1rem;
+  top: 0;
+  left: 0;
   background-color: ${PrimaryColor};
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1),
+              0 2px 2px rgba(0,0,0,0.1),
+              0 4px 4px rgba(0,0,0,0.1),
+              0 8px 8px rgba(0,0,0,0.1),
+              0 16px 16px rgba(0,0,0,0.1);
   @media (min-width: 768px) {
     width: 100%;
     flex-direction: row;
@@ -31,7 +42,7 @@ const HeaderContainer = styled.div`
   }
   @media (min-width: 1440px) {
     width: 100%;
-    height: 8rem;
+    height: 5rem;
   }
 `;
 
@@ -46,9 +57,8 @@ const Logo = styled.img`
 const NavContainer = styled.div`
 	width: 100%;
 	display: flex;
-	justify-content: end;
+	justify-content: space-evenly;
   align-items: center;
-  gap: 1rem;
 	border-radius: 20px 20px;
 	box-shadow: 0 10px 25px 0 rgba(#000, 0.075);
 	background-color: ${PrimaryColor};
@@ -77,7 +87,7 @@ const NavIcon = styled.a`
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	width: 70px;
+	width: 55px;
 	height: 50px;
 	border-radius: 99em;
 	position: relative;
@@ -105,7 +115,7 @@ const NavIcon = styled.a`
   &:hover,
 	&:focus {
 		outline: 0;
-		width: 235px;
+		width: 135px;
 
 		&:before, ${SpanTitle} {
 			transform: translateX(0);
@@ -137,8 +147,6 @@ const SpanIcon = styled.span`
 	position: absolute;
 `;
 
-
-
 const Header = () => {
   return (
     <HeaderContainer>
@@ -149,7 +157,7 @@ const Header = () => {
             to='Home'
             spy={true}
             smooth={true}
-            offset={50}
+            offset={-200}
             duration={500}
           >
             <NavIcon>
@@ -163,8 +171,9 @@ const Header = () => {
             to='Cards'
             spy={true}
             smooth={true}
-            offset={50}
-            duration={500}
+            offset={-100}
+              duration={500}
+              ref={React.createRef()}
           ><NavIcon>
           <SpanIcon>
             <MdOutlineComputer/>
@@ -176,8 +185,9 @@ const Header = () => {
             to='About'
             spy={true}
             smooth={true}
-            offset={50}
-            duration={500}
+            offset={-100}
+              duration={500}
+              ref={React.createRef()}
           >
             <NavIcon>
           <SpanIcon>
@@ -190,8 +200,9 @@ const Header = () => {
             to='Portafolio'
             spy={true}
             smooth={true}
-            offset={50}
-            duration={500}
+            offset={-100}
+              duration={500}
+              ref={React.createRef()}
           >
             <NavIcon>
           <SpanIcon>
@@ -204,8 +215,9 @@ const Header = () => {
             to='Clientes'
             spy={true}
             smooth={true}
-            offset={50}
-            duration={500}
+            offset={-100}
+              duration={500}
+              ref={React.createRef()}
           >
             <NavIcon>
           <SpanIcon>
@@ -218,8 +230,9 @@ const Header = () => {
             to='Contacto'
             spy={true}
             smooth={true}
-            offset={50}
-            duration={500}
+            offset={-100}
+              duration={500}
+              ref={React.createRef()}
           >
             <NavIcon>
           <SpanIcon>

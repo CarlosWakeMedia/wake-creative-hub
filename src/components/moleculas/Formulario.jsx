@@ -158,10 +158,10 @@ const Formulario = () => {
       </Form>
         <SocialMediaContainer>
           <IconContext.Provider value={{className: 'socialIcons'}}>
-            <SocialLinks href="https://twitter.com/wakemediamx/"><BsTwitter/></SocialLinks>
-            <SocialLinks href="https://www.facebook.com/wakemediamx"><BsFacebook/></SocialLinks>
-            <SocialLinks href="https://www.instagram.com/wakemediamx/"><BsInstagram/></SocialLinks>
-            <SocialLinks href="https://www.youtube.com/channel/UCTSjrpiqFppsUlySMZ-LqZQ"><BsYoutube/></SocialLinks>
+            <SocialLinks target={'_blank'} href="https://twitter.com/wakemediamx/"><BsTwitter/></SocialLinks>
+            <SocialLinks target={'_blank'} href="https://www.facebook.com/wakemediamx"><BsFacebook/></SocialLinks>
+            <SocialLinks target={'_blank'} href="https://www.instagram.com/wakemediamx/"><BsInstagram/></SocialLinks>
+            <SocialLinks target={'_blank'} href="https://www.youtube.com/channel/UCTSjrpiqFppsUlySMZ-LqZQ"><BsYoutube/></SocialLinks>
           </IconContext.Provider>
         </SocialMediaContainer>
       </FormContainer>

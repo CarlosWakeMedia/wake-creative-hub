@@ -51,7 +51,7 @@ const ClientsSection = () => {
   return (
     <ClientsContainer id='Clientes'>
       <ContentContainer>
-        <Image src={clientsImage}/>
+        <Image src={clientsImage} alt={'Imagen de los clientes de wake'} />
         <MarksContainer>
           <MarkLogo src={clientsLogos}/>
         </MarksContainer>
