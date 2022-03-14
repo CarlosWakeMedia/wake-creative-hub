@@ -16,6 +16,7 @@ const HeaderContainer = styled.div`
     width: 100%;
     height: 80vh;
     overflow: hidden;
+    padding-top: 12em;
     background-color: #FBB04B;
     &:before {
         content: '';

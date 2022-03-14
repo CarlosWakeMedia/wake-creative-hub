@@ -17,7 +17,8 @@ const HeaderContainer = styled.div`
   height: auto;
   position: fixed;
   z-index: 1000;
-  padding-bottom: 1rem;
+  /* padding-bottom: 1rem; */
+  margin-bottom: 1em;
   top: 0;
   left: 0;
   background-color: ${PrimaryColor};
@@ -26,11 +27,11 @@ const HeaderContainer = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 3px;
-  box-shadow: 0 1px 1px rgba(0,0,0,0.1),
+  /* box-shadow: 0 1px 1px rgba(0,0,0,0.1),
               0 2px 2px rgba(0,0,0,0.1),
               0 4px 4px rgba(0,0,0,0.1),
               0 8px 8px rgba(0,0,0,0.1),
-              0 16px 16px rgba(0,0,0,0.1);
+              0 16px 16px rgba(0,0,0,0.1); */
   @media (min-width: 768px) {
     width: 100%;
     flex-direction: row;
