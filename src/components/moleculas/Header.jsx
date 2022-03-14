@@ -7,7 +7,7 @@ import { ImNewspaper } from 'react-icons/im';
 import { SiGithubsponsors } from 'react-icons/si';
 import { TiContacts } from 'react-icons/ti';
 import { IconContext } from 'react-icons';
-import { PrimaryColor, SecondaryColor } from '../../utils/constants';
+import { PrimaryColor, SecondaryColor, Black } from '../../utils/constants';
 import logo from '../../assets/img/logo.svg';
 import './icons.css';
 
@@ -36,21 +36,22 @@ const HeaderContainer = styled.div`
 `;
 
 const Logo = styled.img`
-  width: 45%;
+  width: 25%;
+  max-width: 8em;
   height: auto;
   margin: 0.6rem;
   z-index: 10;
-  @media (min-width: 768px) {
+  /* @media (min-width: 768px) {
     margin: 1rem;
-    width: 25%;
+    width: 15%;
   }
   @media (min-width: 1024px) {
-    width: 35%;
-    max-width: 13em;
+    width: 15%;
+    max-width: 9em;
   }
   @media (min-width: 1440px) {
     width: 20%;
-  }
+  } */
 `;
 
 const NavContainer = styled.div`

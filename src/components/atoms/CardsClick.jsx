@@ -61,6 +61,7 @@ const InfoContainer = styled.div`
   overflow-y: scroll;
   border: 4px solid ${Black};
   background-color: ${White};
+  color: ${Black};
   z-index: 10;
 
   animation: ${move} 1s 1;
@@ -90,11 +91,7 @@ const List = styled.ul`
 const ListItem = styled.li`
   
 `;
-const ContentCardText = styled.div`
-  transform: translateX( ${props => props.isWatch}% );
-  transition: transform .5s ease-in-out;
-  transition-delay: .4s;
-`
+
 
 
 const CardsClick1 = () => {
@@ -110,7 +107,6 @@ const CardsClick1 = () => {
         </ContainerImage>
 
           <InfoContainer>
-            <ContentCardText>
               <TitleCard isWatch = {viewInfo ? 0 : -100}>{data.card1.title}</TitleCard>
               <TextCard isWatch = {viewInfo ? 0 : -100}>{data.card1.text}</TextCard>
               <List isWatch = {viewInfo ? 0 : -100}>
@@ -118,7 +114,6 @@ const CardsClick1 = () => {
                       <ListItem key={item}>{item}</ListItem>
                   ))}
                 </List>
-            </ContentCardText>
           </InfoContainer>
       </CardContainer>
     )
