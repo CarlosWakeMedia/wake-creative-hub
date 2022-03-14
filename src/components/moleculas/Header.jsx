@@ -7,7 +7,7 @@ import { ImNewspaper } from 'react-icons/im';
 import { SiGithubsponsors } from 'react-icons/si';
 import { TiContacts } from 'react-icons/ti';
 import { IconContext } from 'react-icons';
-import { PrimaryColor, SecondaryColor, Black } from '../../utils/constants';
+import { PrimaryColor, SecondaryColor} from '../../utils/constants';
 import logo from '../../assets/img/logo.svg';
 import './icons.css';
 

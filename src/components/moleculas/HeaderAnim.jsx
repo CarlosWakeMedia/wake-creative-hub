@@ -41,9 +41,12 @@ const Title = styled.h1`
     left: calc(50% - 60px);
     color: ${Black};
     z-index: 50;
-    font-size: 6rem;
+    font-size: 7rem;
     font-style: italic;
     overflow: hidden;
+    @media (min-width: 1440px) {
+      top: calc(50% - 180px);
+  }
 `
 const TitleWake = styled.span`
     display: block;
