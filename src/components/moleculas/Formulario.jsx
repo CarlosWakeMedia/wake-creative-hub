@@ -72,7 +72,7 @@ const Input = styled.input`
     }
 `;
 
-const SubText = styled(Text)`
+const SubText = styled.label`
 text-align: start;
   ::before {
     content:attr(type);
@@ -86,7 +86,7 @@ text-align: start;
 const FormButton = styled.button`
   float:right;
   padding:8px 12px;
-  margin:0 0 1rem 0;
+  margin:1rem 0 1rem 0;
   border:2px solid ${BackgroundColor};
   border-radius: 20px;
   background:0;
@@ -140,22 +140,56 @@ const SocialLinks = styled.a`
 `;
 
 const Formulario = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const inputName = event.target[0].value;
+    const inputEmail = event.target[1].value;
+    const inputMessage = event.target[2].value;
+    const link = document.getElementById('mail');
+    link.setAttribute('href', `mailto:hello@wakemedia.mx?subject= Hola, ${inputName} Correo:${inputEmail}  contactando&body=${inputMessage}`)
+    link.click();
+
+  }
+
   return (
     <Container id='Contacto'>
       <Title>Contactanos</Title>
       <Text>Estamos listos para ayudarte a cumplir tus sueños, envianos un email!!</Text>
       <FormContainer>
-      <Form >
+      <Form id='form' onSubmit={handleSubmit} >
         <SubTitle>Wake Creative Hub</SubTitle>
-        <SubText type="Nombre:"><Input placeholder="Escribe tu nombre aqui.."></Input></SubText>
-        <SubText type="Email:"><Input placeholder="Dejanos saber como contactarte.."></Input></SubText>
-        <SubText type="Message:"><Input placeholder="Cuentanos como podemos ayudarte..."></Input></SubText>
-        <FormButton>Enviar Correo</FormButton>
+          <SubText type="Nombre:">
+            <Input
+              name='name'
+              required
+              placeholder="Escribe tu nombre aqui.."
+            />
+            </SubText>
+          <SubText type="Email:">
+            <Input
+              required
+              name='email'
+              placeholder="Dejanos saber como contactarte.."
+            />
+          </SubText>
+          <SubText type="Mensaje:">
+            <Input
+              required
+              name='mensaje'
+              placeholder="Cuentanos como podemos ayudarte..."
+            />
+            </SubText>
+        <FormButton type='submit'>Enviar Correo</FormButton>
         <InfoContainer>
           <Span ></Span>(+52) 98-76-65-43
-          <Span ></Span> creativeHub@wakemedia.mx
+          <Span ></Span> hello@wakemedia.mx
         </InfoContainer>
-      </Form>
+        </Form>
+        <a
+          href='hello@wakemedia.mx'
+          id='mail'
+          className='correo'
+        >link</a>
         <SocialMediaContainer>
           <IconContext.Provider value={{className: 'socialIcons'}}>
             <SocialLinks target={'_blank'} href="https://twitter.com/wakemediamx/"><BsTwitter/></SocialLinks>
@@ -168,5 +202,10 @@ const Formulario = () => {
     </Container>
   )
 }
+
+
+
+
+
 
 export { Formulario };

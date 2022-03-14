@@ -11,7 +11,7 @@ const CardSecctionContainer = styled.section`
 
 const Container = styled.div`
   display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: 1fr;
 	grid-gap: 3.5em;
   align-content: center ;
   width: 90%;
