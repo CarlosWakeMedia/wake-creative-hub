@@ -40,7 +40,7 @@ const ContainerImage = styled.figure`
   border: 4px solid ${Black};
   background-color: ${White};
   z-index: ${props => props.index};
-  transition: all .5s ease;
+  transition: all .7s ease;
 `;
 const ImageCard = styled.img`
   width: 100%;

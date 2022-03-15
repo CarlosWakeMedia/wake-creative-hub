@@ -5,12 +5,6 @@ import CloudImage from '../../assets/img/CloudImage';
 import ImageHeader from '../../assets/img/imageHeader';
 import { Black } from '../../utils/constants';
 
-const moveText = keyframes`
-    to{
-        transform: translateX(0%);
-    }
-`;
-
 const HeaderContainer = styled.div`
     position: relative;
     width: 100%;
