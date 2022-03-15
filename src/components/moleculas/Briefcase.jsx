@@ -19,10 +19,12 @@ const ContainerBriefcase = styled.section`
 export const Title = styled.h1`
   font-size: 2rem;
   text-align: center;
+  margin: 1rem 0;
 `;
 export const Text = styled.p`
   font-size: 1.2rem;
   text-align: center;
+  margin: 0;
 `;
 
 const Briefcase = () => {
