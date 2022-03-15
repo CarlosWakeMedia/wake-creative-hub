@@ -63,6 +63,7 @@ const InfoContainer = styled.div`
   background-color: ${SecondaryColor};
   color: ${Black};
   z-index: 10;
+  overflow-y:hidden;
 
   animation: ${move} 1s 1;
   animation-timing-function: ease-in-out;
