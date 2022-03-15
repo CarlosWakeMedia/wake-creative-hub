@@ -11,7 +11,7 @@ import card5 from '../../assets/img/card5.svg';
 
 import data from '../../infoCards.json';
 
-import { White, Black } from '../../utils/constants'
+import { White, Black, SecondaryColor } from '../../utils/constants'
 
 const move = keyframes`
   to {
@@ -60,7 +60,7 @@ const InfoContainer = styled.div`
   font-size: 1rem;
   overflow-y: scroll;
   border: 4px solid ${Black};
-  background-color: ${White};
+  background-color: ${SecondaryColor};
   color: ${Black};
   z-index: 10;
 
