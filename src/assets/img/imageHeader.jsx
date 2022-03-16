@@ -113,17 +113,22 @@ const ImageSVG = styled.svg`
 `
 const Title = styled.h1`
     position: absolute;
-    top: calc(50% - 255px);
+    top: calc(50% - 140px);
     left: calc(50% - 60px);
     color: ${props => props.color};
     z-index: 50;
-    font-size: 7rem;
+    font-size: 4rem;
     font-style: italic;
     overflow: hidden;
-    @media(max-width:900px){
-      font-size: 5rem;
-      top: calc(50% - 170px);
-      left: calc(50% - 100px);
+    @media(min-width:768px){
+      font-size: 6rem;
+      top: calc(50% - 210px);
+      left: calc(50% - 20px);
+    }
+    @media(min-width:1024px){
+      font-size: 7rem;
+      top: calc(50% - 270px);
+      left: calc(50% - 50px);
     }
 `
 const TitleWake = styled.span`
@@ -136,15 +141,27 @@ const TitleWake = styled.span`
 `
 const TitleCreative = styled.span`
     display: block;
-    padding-left: 2em;
-    font-size: 3rem;
+    position: relative;
+    bottom: 0;
+    padding-left: 1em;
+    font-size: 2rem;
     transform: translateX(-100%);
     animation: ${moveText} .5s 1;
     animation-delay: 2.2s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
-    @media(max-width:900px){
-      font-size: 2rem;
+    @media(min-width:768px){
+      padding-top: 1rem;
+      padding-left: 1rem;
+      font-size: 3rem;
+    }
+    @media(min-width:1024px){
+      padding-top: 2rem;
+      font-size: 3rem;
+    }
+    @media(min-width:1440px){
+      padding-right: 2rem;
+      font-size: 3rem;
     }
 `
 

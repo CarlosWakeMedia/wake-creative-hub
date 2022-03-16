@@ -34,24 +34,17 @@ const HeaderContainer = styled.div`
               0 16px 16px rgba(0,0,0,0.1); */
   @media (min-width: 768px) {
     width: 100%;
+    height: 5rem;
     flex-direction: row;
     justify-content: space-evenly;
-  }
-  @media (min-width: 1024px) {
-    width: 100%;
-    height: 8rem;
-  }
-  @media (min-width: 1440px) {
-    width: 100%;
-    height: 5rem;
   }
 `;
 
 const Logo = styled.img`
-  width: 25%;
+  width: 15%;
   max-width: 8em;
   height: auto;
-  margin: 0.6rem;
+  margin: 0;
   z-index: 10;
 `;
 

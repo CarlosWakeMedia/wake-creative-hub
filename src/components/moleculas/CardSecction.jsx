@@ -6,7 +6,10 @@ import { CardsClick1, CardsClick2, CardsClick3, CardsClick4, CardsClick5, CardsC
 const CardSecctionContainer = styled.section`
   width: 100%;
   background-color: ${PrimaryColor};
-  padding-bottom: 2em;
+  padding: 2rem 0;
+  @media (min-width: 1024px) {
+    padding-top: 3rem;
+  }
 `
 
 const Container = styled.div`

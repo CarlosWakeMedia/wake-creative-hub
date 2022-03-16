@@ -141,16 +141,6 @@ const SocialLinks = styled.a`
 `;
 
 const Formulario = () => {
-/*   const handleSubmit = (event) => {
-    event.preventDefault();
-    const inputName = event.target[0].value;
-    const inputEmail = event.target[1].value;
-    const inputMessage = event.target[2].value;
-    const link = document.getElementById('mail');
-    link.setAttribute('href', `mailto:hello@wakemedia.mx?subject= Hola, ${inputName} Correo:${inputEmail}  contactando&body=${inputMessage}`)
-    link.click();
-  } */
-
   const [state, handleSubmit] = useForm("xnqwzdao");
   if (state.succeeded) {
     return (
@@ -276,7 +266,6 @@ const Formulario = () => {
             Submit
           </FormButton>
           <InfoContainer>
-            <Span></Span>(+52) 98-76-65-43
             <Span></Span> hello@wakemedia.mx
           </InfoContainer>
         </Form>
@@ -312,43 +301,5 @@ const Formulario = () => {
     </Container>
   );
 }
-
-/*  <Form id='form' onSubmit={handleSubmit} >
-        <SubTitle>Wake Creative Hub</SubTitle>
-          <SubText type="Nombre:">
-            <Input
-              name='name'
-              required
-              placeholder="Escribe tu nombre aqui.."
-            />
-            </SubText>
-          <SubText type="Email:">
-            <Input
-              required
-              name='email'
-              placeholder="Dejanos saber como contactarte.."
-            />
-          </SubText>
-          <SubText type="Mensaje:">
-            <Input
-              required
-              name='mensaje'
-              placeholder="Cuentanos como podemos ayudarte..."
-            />
-            </SubText>
-        <FormButton type='submit'>Enviar Correo</FormButton>
-        <InfoContainer>
-          <Span ></Span>(+52) 98-76-65-43
-          <Span ></Span> hello@wakemedia.mx
-        </InfoContainer>
-        </Form>
-        <a
-          href='hello@wakemedia.mx'
-          id='mail'
-          className='correo'
-        >link</a> */
-
-
-
 
 export { Formulario };
