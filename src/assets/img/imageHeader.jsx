@@ -16,6 +16,7 @@ const ContainerImage = styled.div`
 `
 const Bgimage = styled.svg`
     position: relative;
+    bottom: -100px;
     width: 100%;
     height: 100%;
     z-index: 20; 
@@ -55,8 +56,12 @@ const Bgimage = styled.svg`
       .mont{
         transform: translateX(calc(50% - 490px));
       }
+    @media(max-height:850px){
+        transform: translateY(-60px);
+        height: 120%;
+    }
     @media(max-height:650px){
-        transform: translateY(-40px);
+        transform: translateY(-130px);
         height: 120%;
     }
 `
@@ -67,7 +72,8 @@ const ImageSVG = styled.svg`
     top: calc(50% - 290px);
     bottom: -15%;
     width: 350%;
-    height: 100%;
+    height: 120%;
+    max-height: 800px;
     z-index: 20;
     .cls-1 {
         fill: #f47f6b;
@@ -121,9 +127,10 @@ const Title = styled.h1`
     top: calc(50% - 275px);
     left: calc(50% - 50px);
     color: ${props => props.color};
+    /* -webkit-text-stroke: .2px white; */
     z-index: 50;
     font-size: 7rem;
-    font-style: italic;
+    font-family: 'Fraunces', serif;
     overflow: hidden;
     @media(max-width:900px){
       font-size: 6rem;
@@ -132,8 +139,8 @@ const Title = styled.h1`
     }
     @media(max-width:500px){
       font-size: 5rem;
-      top: calc(50% - 195px);
-      left: calc(50% - 60px);
+      top: calc(50% - 185px);
+      left: calc(50% - 80px);
     }
 `
 const TitleWake = styled.span`
@@ -143,11 +150,13 @@ const TitleWake = styled.span`
     animation-delay: 1.5s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
+    font-weight: 500;
 `
 const TitleCreative = styled.span`
     display: block;
     padding-left: 2em;
     font-size: 3rem;
+    font-weight: 400;
     transform: translateX(-100%);
     animation: ${moveText} .5s 1;
     animation-delay: 2.2s;
@@ -251,7 +260,7 @@ export default function ImageHeader({ colorText }) {
             </ImageSVG> 
 
             <Title color={colorText}>
-                <TitleWake>Wake</TitleWake> 
+                <TitleWake>WAKE</TitleWake> 
                 <TitleCreative>Creative Hub</TitleCreative>
             </Title>
       </ContainerImage>

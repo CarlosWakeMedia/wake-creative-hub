@@ -50,6 +50,11 @@ const TitleCardContainer = styled.figcaption`
   bottom: 0px;
   width: 100%;
   background-color: ${White};
+  h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 10px 0;
+  }
 `;
 const InfoContainer = styled.div`
   position: absolute;
@@ -71,6 +76,7 @@ const InfoContainer = styled.div`
 const TitleCard = styled.h3`
   padding-left: 1em;
   font-size: 1.25rem;
+  font-weight: 600;
   transform: translateX( ${props => props.isWatch}% );
   transition: transform .5s ease-in-out;
 `;

@@ -10,7 +10,9 @@ const HomeContainer = styled.header`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: auto;
+  height: 100vh;
+  max-height: 1350px;
+  overflow: hidden;
   background-color: ${PrimaryColor};
 `;
 
