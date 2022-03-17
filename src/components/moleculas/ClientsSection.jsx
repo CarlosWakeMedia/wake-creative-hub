@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { PrimaryColor, SecondaryColor } from '../../utils/constants'
 import clientsImage from '../../assets/img/clientsImage.svg';
-import clientsLogos from '../../assets/img/clientsLogos.png';
+import { ClientsLogos } from '../atoms/ClientsLogos';
 
 
 const ClientsContainer = styled.section`
@@ -13,6 +13,8 @@ const ClientsContainer = styled.section`
 `
 const ContentContainer = styled.div`
     display:flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     width: 90%;
     height: auto;
@@ -37,23 +39,21 @@ const Image = styled.img`
     }
     `
 const MarksContainer = styled.div`
-    width:90%;
+    width:100%;
+    height: 100%;
     margin: 0 auto;
     @media (min-width: 768px) {
         width:45%;
     }
 `
-const MarkLogo = styled.img`
-    width:90%;
-    padding: 1em 0;
-`
+
 const ClientsSection = () => {
   return (
     <ClientsContainer id='Clientes'>
       <ContentContainer>
         <Image src={clientsImage} alt={'Imagen de los clientes de wake'} />
         <MarksContainer>
-          <MarkLogo src={clientsLogos}/>
+          <ClientsLogos />
         </MarksContainer>
       </ContentContainer>
     </ClientsContainer>
