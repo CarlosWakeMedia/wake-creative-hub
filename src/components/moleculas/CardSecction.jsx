@@ -11,7 +11,10 @@ const CardSecctionContainer = styled.section`
     padding-top: 3rem;
   }
 `
-
+const TitleSection = styled.h2`
+  text-align: center;
+  font-size: 2rem;
+`
 const Container = styled.div`
   display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(21em, 1fr));
@@ -28,6 +31,7 @@ const CardSecction
   = () => {
   return (
     <CardSecctionContainer>
+      <TitleSection>Servicios</TitleSection>
       <Container id='Cards'>
         <CardsClick1 />
         <CardsClick2/>
