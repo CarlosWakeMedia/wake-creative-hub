@@ -27,11 +27,11 @@ const HeaderContainer = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 3px;
-  /* box-shadow: 0 1px 1px rgba(0,0,0,0.1),
-              0 2px 2px rgba(0,0,0,0.1),
-              0 4px 4px rgba(0,0,0,0.1),
-              0 8px 8px rgba(0,0,0,0.1),
-              0 16px 16px rgba(0,0,0,0.1); */
+  box-shadow: 0 1px 1px rgba(244,127,107,0.1),
+              0 2px 2px rgba(244,127,107,0.1),
+              0 4px 4px rgba(244,127,107,0.1),
+              0 8px 8px rgba(244,127,107,0.1),
+              0 16px 16px rgba(244,127,107,0.1);
   @media (min-width: 768px) {
     width: 100%;
     height: 5rem;
@@ -41,8 +41,8 @@ const HeaderContainer = styled.div`
 `;
 
 const Logo = styled.img`
-  width: 15%;
-  max-width: 8em;
+  width: 25%;
+  max-width: 6em;
   height: auto;
   margin: 0;
   z-index: 10;

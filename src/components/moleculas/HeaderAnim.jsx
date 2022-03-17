@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import CloudImage from '../../assets/img/CloudImage';
 import ImageHeader from '../../assets/img/imageHeader';
-import { Black } from '../../utils/constants';
+import { Black} from '../../utils/constants';
 
 const HeaderContainer = styled.div`
     position: relative;

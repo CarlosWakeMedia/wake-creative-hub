@@ -18,6 +18,7 @@ const Container = styled.div`
 	grid-gap: 1.5em;
   align-content: center ;
   width: 90%;
+  padding: 3em 0;
   max-width: 1400px;
   margin: 0 auto;
   min-width: 320px;
