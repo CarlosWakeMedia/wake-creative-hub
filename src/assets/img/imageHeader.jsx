@@ -23,36 +23,28 @@ const Bgimage = styled.svg`
     .cls-1 {
         fill: #f47f6b;
       }
-
       .cls-2, .cls-5 {
         fill: none;
       }
-
       .cls-2 {
         stroke: #0fa;
       }
-
       .cls-2, .cls-4, .cls-5, .cls-7 {
         stroke-miterlimit: 10;
       }
-
       .cls-3 {
         fill: #31302e;
       }
-
       .cls-4, .cls-6 {
         fill: #f8eee2;
       }
-
       .cls-4, .cls-5, .cls-7 {
         stroke: #31302e;
         stroke-width: 1.5px;
       }
-
       .cls-7 {
         fill: #e65a41;
       }
-
       .mont{
         transform: translateX(calc(50% - 490px));
       }
@@ -78,36 +70,28 @@ const ImageSVG = styled.svg`
     .cls-1 {
         fill: #f47f6b;
       }
-
       .cls-2, .cls-5 {
         fill: none;
       }
-
       .cls-2 {
         stroke: #0fa;
       }
-
       .cls-2, .cls-4, .cls-5, .cls-7 {
         stroke-miterlimit: 10;
       }
-
       .cls-3 {
         fill: #31302e;
       }
-
       .cls-4, .cls-6 {
         fill: #f8eee2;
       }
-
       .cls-4, .cls-5, .cls-7 {
         stroke: #31302e;
         stroke-width: 1.5px;
       }
-
       .cls-7 {
         fill: #e65a41;
       }
-
     @media(max-width:900px){
       left: calc(50% - 700px);
       transform: scale(.8);
@@ -124,22 +108,22 @@ const ImageSVG = styled.svg`
 `
 const Title = styled.h1`
     position: absolute;
-    top: calc(50% - 140px);
-    left: calc(50% - 60px);
+    top: calc(50% - 275px);
+    left: calc(50% - 50px);
     color: ${props => props.color};
     /* -webkit-text-stroke: .2px white; */
     z-index: 50;
-    font-size: 7rem;
+    font-size: 12rem;
     font-family: 'Fraunces', serif;
     overflow: hidden;
-    @media(min-width:768px){
+    @media(max-width:900px){
       font-size: 6rem;
-      top: calc(50% - 210px);
-      left: calc(50% - 20px);
+      top: calc(50% - 260px);
+      left: calc(50% - 0px);
     }
     @media(max-width:500px){
       font-size: 5rem;
-      top: calc(50% - 185px);
+      top: calc(50% - 155px);
       left: calc(50% - 80px);
     }
 `
@@ -154,26 +138,16 @@ const TitleWake = styled.span`
 `
 const TitleCreative = styled.span`
     display: block;
-    padding-left: 2em;
-    font-size: 3rem;
+    padding-left: 1.5em;
+    font-size: 5.5rem;
     font-weight: 400;
     transform: translateX(-100%);
     animation: ${moveText} .5s 1;
     animation-delay: 2.2s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
-    @media(min-width:768px){
-      padding-top: 1rem;
-      padding-left: 1rem;
-      font-size: 3rem;
-    }
-    @media(min-width:1024px){
-      padding-top: 2rem;
-      font-size: 3rem;
-    }
-    @media(min-width:1440px){
-      padding-right: 2rem;
-      font-size: 3rem;
+    @media(max-width:900px){
+      font-size: 4rem;
     }
     @media(max-width:500px){
       font-size: 1.5rem;
