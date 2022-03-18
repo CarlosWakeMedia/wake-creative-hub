@@ -38,11 +38,31 @@ const CardSecction
           setOpenModal = {setOpenModal}
           setImageModal = {setImageModal}
         />
-        <CardsClick2/>
-        <CardsClick3/>
-        <CardsClick4/>
-        <CardsClick5/>
-        <CardsClick6/>
+        <CardsClick2
+          setInfoCard = {setInfoCard}
+          setOpenModal = {setOpenModal}
+          setImageModal = {setImageModal}
+        />
+        <CardsClick3
+          setInfoCard = {setInfoCard}
+          setOpenModal = {setOpenModal}
+          setImageModal = {setImageModal}
+        />
+        <CardsClick4
+          setInfoCard = {setInfoCard}
+          setOpenModal = {setOpenModal}
+          setImageModal = {setImageModal}
+        />
+        <CardsClick5
+          setInfoCard = {setInfoCard}
+          setOpenModal = {setOpenModal}
+          setImageModal = {setImageModal}
+        />
+        <CardsClick6
+          setInfoCard = {setInfoCard}
+          setOpenModal = {setOpenModal}
+          setImageModal = {setImageModal}
+        />
       </Container>
     </CardSecctionContainer>
   )
