@@ -6,14 +6,15 @@ import { BiX } from "react-icons/bi";
 const CardModalContainer=styled.article`
     display: grid;
     grid-template-areas: 
-        "btnC   btnC"
-        "img    title"
-        "img    p"
-        "img    list"
+        "btnC"
+        "title"
+        "p"
+        "list"
+        "img"
     ;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3.75em repeat(3, auto);
-    gap: 2.5rem;
+        grid-template-columns: 100%;
+        grid-template-rows: 2em repeat(4, auto);
+        gap: 2.5rem;
     width: 80%;
     max-width: 1500px;
     min-width: 310px;
@@ -23,6 +24,16 @@ const CardModalContainer=styled.article`
     background-color: ${White};
     color: ${Black};
     border: 4px solid ${Black};
+    @media (min-width: 1024px) {
+        grid-template-areas: 
+        "btnC   btnC"
+        "img    title"
+        "img    p"
+        "img    list"
+    ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3.75em repeat(3, auto);
+    }
 `
 const ButtonContainer=styled.div`
     display: flex;
@@ -55,6 +66,7 @@ const Title=styled.h3`
     font-weight: 700;
     line-height: 72px;
     letter-spacing: 0.2px;
+    margin-left: 1em;
 `
 const Text=styled.p`
     grid-area: p;
@@ -62,10 +74,14 @@ const Text=styled.p`
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.2px;
+    width: 90%;
+    margin-left: 1em;
 `
 const List=styled.ul`
     grid-area: list;
     padding: 0 0 2em 2em;
+    width: 90%;
+    margin-left: 1em;
 `
 const ListItem=styled.li`
     font-size: 1.5rem;
