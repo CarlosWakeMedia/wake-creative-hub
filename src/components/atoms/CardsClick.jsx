@@ -58,8 +58,8 @@ const TitleCardContainer = styled.figcaption`
 `;
 const InfoContainer = styled.div`
   position: absolute;
-  top: 0px;
-  left: 5%;
+  left: 3%;
+  transform: translateY(-22px);
   width: 90%;
   height: 90%;
   font-size: 1rem;

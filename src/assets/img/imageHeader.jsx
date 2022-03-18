@@ -46,7 +46,7 @@ const Bgimage = styled.svg`
         fill: #e65a41;
       }
       .mont{
-        transform: translateX(calc(50% - 490px));
+        transform: translateX(calc(50% - 510px));
       }
     @media(max-height:850px){
         transform: translateY(-60px);
@@ -60,7 +60,7 @@ const Bgimage = styled.svg`
 
 const ImageSVG = styled.svg`
     position: absolute;
-    left: calc(50% - 550px);
+    left: calc(50% - 690px);
     top: calc(50% - 290px);
     bottom: -15%;
     width: 350%;
@@ -109,7 +109,7 @@ const ImageSVG = styled.svg`
 const Title = styled.h1`
     position: absolute;
     top: calc(50% - 275px);
-    left: calc(50% - 50px);
+    left: calc(50% - 160px);
     color: ${props => props.color};
     /* -webkit-text-stroke: .2px white; */
     z-index: 50;
