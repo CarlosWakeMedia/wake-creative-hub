@@ -101,11 +101,14 @@ const ListItem = styled.li`
 
 
 
-const CardsClick1 = () => {
+const CardsClick1 = ({setInfoCard, setOpenModal, setImageModal}) => {
   const [viewInfo, setViewInfo] = React.useState(false)
-  
     return (
-      <CardContainer onClick={()=> setViewInfo(!viewInfo)} >
+      <CardContainer onClick={()=> {
+        setInfoCard(data.card1)
+        setOpenModal(true)
+        setImageModal(card1)
+      }} >
         <ContainerImage index = {viewInfo ? 0 : 20}>
             <ImageCard src={card1} alt={data.card1.title} />
             <TitleCardContainer>
@@ -127,11 +130,15 @@ const CardsClick1 = () => {
   }
 
 
-  const CardsClick2 = () => {
+  const CardsClick2 = ({setInfoCard, setOpenModal, setImageModal}) => {
     const [viewInfo, setViewInfo] = React.useState(false)
     
       return (
-        <CardContainer onClick={()=> setViewInfo(!viewInfo)} >
+        <CardContainer onClick={()=> {
+          setInfoCard(data.card2)
+          setOpenModal(true)
+          setImageModal(card2)
+        }} >
           <ContainerImage index = {viewInfo ? 0 : 20}>
               <ImageCard src={card2} alt={data.card2.title} />
               <TitleCardContainer>
@@ -151,11 +158,15 @@ const CardsClick1 = () => {
         </CardContainer>
       )
     }
-    const CardsClick3 = () => {
+    const CardsClick3 = ({setInfoCard, setOpenModal, setImageModal}) =>{
       const [viewInfo, setViewInfo] = React.useState(false)
       
         return (
-          <CardContainer onClick={()=> setViewInfo(!viewInfo)} >
+          <CardContainer onClick={()=> {
+            setInfoCard(data.card3)
+            setOpenModal(true)
+            setImageModal(card3)
+          }} >
             <ContainerImage index = {viewInfo ? 0 : 20}>
                 <ImageCard src={card3} alt={data.card3.title} />
                 <TitleCardContainer>
@@ -175,11 +186,15 @@ const CardsClick1 = () => {
           </CardContainer>
         )
       }
-      const CardsClick4 = () => {
+      const CardsClick4 = ({setInfoCard, setOpenModal, setImageModal}) => {
         const [viewInfo, setViewInfo] = React.useState(false)
         
           return (
-            <CardContainer onClick={()=> setViewInfo(!viewInfo)} >
+            <CardContainer onClick={()=> {
+              setInfoCard(data.card4)
+              setOpenModal(true)
+              setImageModal(card4)
+            }} >
               <ContainerImage index = {viewInfo ? 0 : 20}>
                   <ImageCard src={card4} alt={data.card4.title} />
                   <TitleCardContainer>
@@ -199,11 +214,15 @@ const CardsClick1 = () => {
             </CardContainer>
           )
         }
-        const CardsClick5 = () => {
+        const CardsClick5 = ({setInfoCard, setOpenModal, setImageModal}) => {
           const [viewInfo, setViewInfo] = React.useState(false)
           
             return (
-              <CardContainer onClick={()=> setViewInfo(!viewInfo)} >
+              <CardContainer onClick={()=> {
+                setInfoCard(data.card5)
+                setOpenModal(true)
+                setImageModal(card5)
+              }} >
                 <ContainerImage index = {viewInfo ? 0 : 20}>
                     <ImageCard src={card5} alt={data.card5.title} />
                     <TitleCardContainer>
@@ -223,10 +242,14 @@ const CardsClick1 = () => {
               </CardContainer>
             )
           }
-const CardsClick6 = () => {
+const CardsClick6 = ({setInfoCard, setOpenModal, setImageModal}) => {
   const [viewInfo, setViewInfo] = React.useState(false)
     return (
-      <CardContainer onClick={()=> setViewInfo(!viewInfo)} >
+      <CardContainer onClick={()=> {
+        setInfoCard(data.card6)
+        setOpenModal(true)
+        setImageModal(card6)
+      }} >
         <ContainerImage index = {viewInfo ? 0 : 20}>
             <ImageCard src={card6} alt={data.card6.title} />
             <TitleCardContainer>

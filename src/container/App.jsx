@@ -11,7 +11,11 @@ import { CardModal } from '../components/atoms/CardModal'
 
 
 function App() {
-  const [openModal, setOpenModal] = React.useState(true)
+  const [openModal, setOpenModal] = React.useState(false)
+  const [infoCard, setInfoCard] = React.useState({})
+  const [imageModal, setImageModal] = React.useState(null)
+
+  
 
   React.useEffect(()=>{
     if(openModal){
@@ -24,13 +28,19 @@ function App() {
   return (
     <React.Fragment >
       <Home/>
-      <CardSecction />
+      <CardSecction 
+        setInfoCard={setInfoCard}
+        setOpenModal={setOpenModal}
+        setImageModal={setImageModal}
+      />
       {openModal && (
           <Modal
               setOpenModal = {setOpenModal}
           >
               <CardModal 
                 setOpenModal = {setOpenModal}
+                data={infoCard}
+                image={imageModal}
               />
           </Modal>
       )}

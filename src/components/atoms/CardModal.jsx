@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import { White, Black, SecondaryColor } from '../../utils/constants'
 import { BiX } from "react-icons/bi";
-import card1 from '../../assets/img/images-test/imgTest1.svg';
 
 const CardModalContainer=styled.article`
     display: grid;
@@ -75,7 +74,7 @@ const ListItem=styled.li`
     letter-spacing: 0.2px;
 `
 
-const CardModal = ({setOpenModal, image, title, text, points}) => {
+const CardModal = ({setOpenModal, image, data}) => {
   return (
     <CardModalContainer>
         <ButtonContainer>
@@ -83,18 +82,16 @@ const CardModal = ({setOpenModal, image, title, text, points}) => {
                <BiX/>
             </ButtonClose>
         </ButtonContainer>
-        <Image src={card1}/>
+        <Image src={image}/>
 
-        <Title>Branding</Title>
-        <Text>Damos vida a las marcas desde el momento que son una idea (ó que quieren cambiar su identidad) y ñas acompañamos o damos seguimiento a lo largo de su trayectoria</Text>
+        <Title>{data.title}</Title>
+        <Text>{data.text}</Text>
         <List>
-            <ListItem>Conceptualización</ListItem>
-            <ListItem>Propuestas de Valor</ListItem>
-            <ListItem>Naming</ListItem>
-            <ListItem>Diseño de marca</ListItem>
-            <ListItem>Estrategia de marca</ListItem>
-            <ListItem>Seguimiento en redes sociales</ListItem>
-            <ListItem>Landing Page</ListItem>
+            {data.puntos.map(item => (
+                <ListItem key={item}>
+                  {item}
+                </ListItem>
+            ))}
         </List>
     </CardModalContainer>
   )

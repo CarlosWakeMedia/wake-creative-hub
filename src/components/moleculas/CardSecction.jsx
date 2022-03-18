@@ -28,12 +28,16 @@ const Container = styled.div`
 `;
 
 const CardSecction
-  = () => {
+  = ({setInfoCard, setOpenModal, setImageModal}) => {
   return (
     <CardSecctionContainer>
       <TitleSection>Servicios</TitleSection>
       <Container id='Cards'>
-        <CardsClick1 />
+        <CardsClick1 
+          setInfoCard = {setInfoCard}
+          setOpenModal = {setOpenModal}
+          setImageModal = {setImageModal}
+        />
         <CardsClick2/>
         <CardsClick3/>
         <CardsClick4/>
