@@ -20,7 +20,6 @@ const Home = () => {
   return (
     <HomeContainer>
       <Header />
-      {/* <Slider/> */}
       <HeaderAnim/>
     </HomeContainer>
   )

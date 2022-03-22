@@ -39,16 +39,16 @@ const HeaderContainer = styled.div`
   }
   @media (min-width: 1024px) {
     width: 100%;
-    height: 8rem;
+    height: 5rem;
   }
   @media (min-width: 1440px) {
     width: 100%;
-    height: 5rem;
+    height: 4rem;
   }
 `;
 
 const Logo = styled.img`
-  width: 25%;
+  width: 15%;
   max-width: 6em;
   height: auto;
   margin: 0.6rem;
