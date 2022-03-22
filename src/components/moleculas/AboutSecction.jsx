@@ -31,7 +31,7 @@ const ContentContainer = styled.div`
               0 16px 16px rgba(0,0,0,0.1);
     @media (min-width: 768px) {
         grid-template-columns: 40% auto;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 40% 60%;
         grid-template-areas:
             "img    list "
             "img  desc "
@@ -47,8 +47,8 @@ const Image = styled.img`
 `
 const AboutList = styled.ul`
     grid-area: list;
-    place-self: center;
-    padding: 0;
+    place-self: end center;
+    padding: 1em 0 ;
     width: 80%;
     list-style:none;
     font-weight: bold;
@@ -74,12 +74,14 @@ const AboutText = styled.p`
     grid-area: desc;
     width: 80%;
     max-width: 400px;
-    place-self: center;
+    padding: 1em 0;
+    place-self: start center;
     font-size: 1rem;
     @media (min-width: 768px) {
         text-align: center;
     }
     @media (min-width: 1024px) {
+      padding-top: 0;
       font-size: 1.5rem;
       text-align: center;
     }
