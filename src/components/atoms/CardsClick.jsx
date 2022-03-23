@@ -27,14 +27,14 @@ const CardContainer = styled.div`
   width: 90%;
   min-width: 300px;
   max-width: 550px;
-  height: auto;
+  height: 100%;
 `;
 const ContainerImage = styled.figure`
   position: relative;
   top: 0;
   left: 0;
   width: 90%;
-  height: 90%;
+  height: 100%;
   margin: 0;
   overflow: hidden;
   border: 4px solid ${Black};
@@ -46,9 +46,8 @@ const ImageCard = styled.img`
   width: 100%;
 `;
 const TitleCardContainer = styled.figcaption`
-  position: absolute;
-  bottom: 0px;
   width: 100%;
+  height: auto;
   background-color: ${White};
   h3 {
     font-size: 1.3rem;
@@ -61,7 +60,7 @@ const InfoContainer = styled.div`
   left: 3%;
   transform: translateY(-22px);
   width: 90%;
-  height: 90%;
+  height: 100%;
   font-size: 1rem;
   overflow-y: scroll;
   border: 4px solid ${Black};
@@ -116,7 +115,7 @@ const CardsClick1 = ({setInfoCard, setOpenModal, setImageModal}) => {
               <TitleCard>
                 {data.card1.title}
                 <Cta>
-                  ver más <BsFillHandIndexFill/>
+                  ver más 
                 </Cta>
               </TitleCard>
             </TitleCardContainer>
@@ -144,7 +143,7 @@ const CardsClick1 = ({setInfoCard, setOpenModal, setImageModal}) => {
                     {data.card2.title}
                   </samp>
                   <Cta>
-                    ver más <BsFillHandIndexFill/>
+                    ver más
                   </Cta>
                 </TitleCard>
               </TitleCardContainer>
@@ -172,7 +171,7 @@ const CardsClick1 = ({setInfoCard, setOpenModal, setImageModal}) => {
                   <TitleCard>
                     {data.card3.title}
                     <Cta>
-                      ver más <BsFillHandIndexFill/>
+                      ver más 
                     </Cta>
                   </TitleCard>
                 </TitleCardContainer>
@@ -196,7 +195,7 @@ const CardsClick1 = ({setInfoCard, setOpenModal, setImageModal}) => {
                     <TitleCard>
                       {data.card4.title}
                       <Cta>
-                        ver más <BsFillHandIndexFill/>
+                        ver más 
                       </Cta>
                     </TitleCard>
                   </TitleCardContainer>
@@ -221,7 +220,7 @@ const CardsClick1 = ({setInfoCard, setOpenModal, setImageModal}) => {
                       <TitleCard>
                         {data.card5.title}
                         <Cta>
-                          ver más <BsFillHandIndexFill/>
+                          ver más 
                         </Cta>
                       </TitleCard>
                     </TitleCardContainer>
@@ -245,7 +244,7 @@ const CardsClick6 = ({setInfoCard, setOpenModal, setImageModal}) => {
               <TitleCard>
                 {data.card6.title}
                 <Cta>
-                  ver más <BsFillHandIndexFill/>
+                  ver más 
                 </Cta>
               </TitleCard>
             </TitleCardContainer>
