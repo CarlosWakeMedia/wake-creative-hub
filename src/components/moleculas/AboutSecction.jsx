@@ -42,8 +42,11 @@ const ContentContainer = styled.div`
 const Image = styled.img`
   grid-area: img;
   place-self: center;
-  width: 80%;
+  width: 50%;
   margin: 2rem;
+  @media (min-width: 768px) {
+    width: 80%;
+  }
 `
 const AboutList = styled.ul`
     grid-area: list;

@@ -1,12 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-scroll";
-import { BiHome, BiBriefcaseAlt2 } from "react-icons/bi";
-import { MdOutlineComputer } from "react-icons/md";
-import { ImNewspaper } from "react-icons/im";
-import { SiGithubsponsors } from "react-icons/si";
-import { TiContacts } from "react-icons/ti";
-import { IconContext } from "react-icons";
 import { PrimaryColor, SecondaryColor } from "../../utils/constants";
 import logo from "../../assets/img/logo.svg";
 import "./icons.css";
@@ -163,9 +157,6 @@ const Header = () => {
             duration={500}
           >
             <NavIcon>
-              <SpanIcon>
-                <BiHome />
-              </SpanIcon>
               <SpanTitle>Home</SpanTitle>
             </NavIcon>
           </Link>
@@ -179,9 +170,6 @@ const Header = () => {
             ref={React.createRef()}
           >
             <NavIcon>
-              <SpanIcon>
-                <MdOutlineComputer />
-              </SpanIcon>
               <SpanTitle>Servicios</SpanTitle>
             </NavIcon>
           </Link>
@@ -196,9 +184,6 @@ const Header = () => {
             ref={React.createRef()}
           >
             <NavIcon>
-              <SpanIcon>
-                <ImNewspaper />
-              </SpanIcon>
               <SpanTitle>Acerca de</SpanTitle>
             </NavIcon>
           </Link>

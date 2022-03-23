@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import {Button} from '../atoms/Button'
 import { BackgroundColor } from '../../utils/constants';
-import { AiOutlineDownload, AiFillBehanceCircle } from "react-icons/ai";
+import { AiFillBehanceCircle } from "react-icons/ai";
 
 const ContainerBriefcase = styled.section`
   width: 100%;
@@ -43,18 +43,6 @@ const Briefcase = () => {
       <Title>¿Quieres Conocer parte de nuestro trabajo?</Title>
       <Text>Descarga nuestra presentación</Text>
       <BottonContainer>
-        <Button
-          href='presentación'
-          download='presentacion'
-          value={
-            (<React.Fragment>
-              <span>
-                Descarga aquí!! 
-              </span> 
-              <AiOutlineDownload/>
-            </React.Fragment>
-            )}
-        />
         <Button
           href='https://www.behance.net/'
           value={

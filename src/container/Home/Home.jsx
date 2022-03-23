@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import { Header } from '../../components/moleculas/Header.jsx';
+import { Navbar } from '../../components/atoms/Navbar.jsx';
 import { HeaderAnim } from '../../components/moleculas/HeaderAnim.jsx';
 import { PrimaryColor } from '../../utils/constants.jsx';
 
@@ -18,8 +18,8 @@ const HomeContainer = styled.header`
 
 const Home = () => {
   return (
-    <HomeContainer>
-      <Header />
+    <HomeContainer id='Home'>
+      <Navbar/>
       <HeaderAnim/>
     </HomeContainer>
   )

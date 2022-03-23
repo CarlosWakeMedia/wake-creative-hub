@@ -4,7 +4,7 @@ import { useForm, ValidationError } from '@formspree/react';
 import { BackgroundColor } from '../../utils/constants'
 import { Title, Text } from './Briefcase';
 import { IconContext } from "react-icons";
-import { BsFacebook, BsTwitter, BsInstagram, BsYoutube } from 'react-icons/bs';
+import { BsFacebook, BsLinkedin, BsInstagram, BsYoutube } from 'react-icons/bs';
 import '../moleculas/icons.css';
 
 
@@ -194,9 +194,9 @@ const Formulario = () => {
           <IconContext.Provider value={{ className: "socialIcons" }}>
             <SocialLinks
               target={"_blank"}
-              href="https://twitter.com/wakemediamx/"
+              href="https://www.linkedin.com/company/wake-ch/"
             >
-              <BsTwitter />
+              <BsLinkedin />
             </SocialLinks>
             <SocialLinks
               target={"_blank"}
@@ -273,9 +273,9 @@ const Formulario = () => {
           <IconContext.Provider value={{ className: "socialIcons" }}>
             <SocialLinks
               target={"_blank"}
-              href="https://twitter.com/wakemediamx/"
+              href="https://www.linkedin.com/company/wake-ch/"
             >
-              <BsTwitter />
+              <BsLinkedin />
             </SocialLinks>
             <SocialLinks
               target={"_blank"}

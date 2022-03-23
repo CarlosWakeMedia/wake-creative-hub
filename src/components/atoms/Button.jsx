@@ -4,7 +4,6 @@ import {BackgroundColor} from '../../utils/constants'
 
 const ButtonPrimary = styled.a`
   padding: 1rem;
-  border-radius: 35px;
   background-color: white;
   color: ${BackgroundColor};
   font-size: 1rem;
