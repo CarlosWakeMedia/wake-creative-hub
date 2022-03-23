@@ -16,7 +16,7 @@ const HeaderContainer = styled.div`
   width: 100%;
   height: auto;
   position: fixed;
-  z-index: 1000;
+  z-index: 100;
   /* padding-bottom: 1rem; */
   margin-bottom: 1em;
   top: 0;

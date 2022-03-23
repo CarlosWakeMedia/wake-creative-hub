@@ -107,7 +107,7 @@ const ImageSVG = styled.svg`
     width: 100%;
     height: auto;
     min-height: 50vh;
-    z-index: 10;
+    z-index: 60;
 `
 
 export default function CloudImage() {
