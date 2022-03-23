@@ -41,7 +41,8 @@ const ButtonContainer=styled.div`
     flex-direction: row-reverse;
     grid-area: btnC;
     width: 100%;
-    height: 100%;
+    height: auto;
+    min-height: 3em;
     border-bottom: 4px solid ${Black};
 `
 const ButtonClose=styled.button`
@@ -60,6 +61,13 @@ const ButtonClose=styled.button`
 `
 const Image=styled.img`
     grid-area: img;
+    width: 80%;
+    place-self: center;
+    /* margin: 0 auto; */
+    padding-bottom: 4em;
+    @media (min-width: 1024px) {
+        place-self: start end;
+    }
 `
 const Title=styled.h3`
     grid-area: title;

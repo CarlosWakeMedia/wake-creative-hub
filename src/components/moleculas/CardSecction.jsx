@@ -17,14 +17,14 @@ const TitleSection = styled.h2`
 `
 const Container = styled.div`
   display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(21em, 1fr));
-	grid-gap: 1.5em;
+	grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
+	grid-gap: 2em 0;
   align-content: center ;
   width: 90%;
-  padding: 3em 0;
-  max-width: 1400px;
-  margin: 0 auto;
+  max-width: 1150px;
   min-width: 320px;
+  padding: 3em 0;
+  margin: 0 auto;
 `;
 
 const CardSecction

@@ -25,9 +25,9 @@ const CardContainer = styled.div`
   position: relative;
   cursor: pointer;
   width: 90%;
-  min-width: 300px;
-  max-width: 550px;
   height: 100%;
+  margin: 0 auto;
+  transform: translateX(5%);
 `;
 const ContainerImage = styled.figure`
   position: relative;
