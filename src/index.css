@@ -41,7 +41,7 @@ body {
 .active:hover,
 .active:focus {
   outline: 0;
-  width: 135px;
+  width: 120px;
 }
 *{
   margin: 0;

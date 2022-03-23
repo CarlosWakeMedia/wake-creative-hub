@@ -144,7 +144,7 @@ const SpanIcon = styled.span`
   height: 28px;
   display: block;
   flex-shrink: 0;
-  left: 18px;
+  left: 7px;
   position: absolute;
 `;
 
