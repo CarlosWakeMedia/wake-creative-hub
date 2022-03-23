@@ -18,7 +18,7 @@ const CardModalContainer=styled.article`
     width: 80%;
     max-width: 1500px;
     min-width: 310px;
-    margin: 10vh auto;
+    margin: 2em auto;
     height: auto;
     z-index: 1500;
     background-color: ${White};
@@ -33,6 +33,7 @@ const CardModalContainer=styled.article`
     ;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 3.75em repeat(3, auto);
+        margin: 10vh auto;
     }
 `
 const ButtonContainer=styled.div`
@@ -62,20 +63,26 @@ const Image=styled.img`
 `
 const Title=styled.h3`
     grid-area: title;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
     line-height: 72px;
     letter-spacing: 0.2px;
     margin-left: 1em;
+    @media (min-width: 600px) {
+        font-size: 3rem;
+    }
 `
 const Text=styled.p`
     grid-area: p;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.2px;
     width: 90%;
     margin-left: 1em;
+    @media (min-width: 600px) {
+        font-size: 1.5rem;
+    }
 `
 const List=styled.ul`
     grid-area: list;
@@ -84,10 +91,13 @@ const List=styled.ul`
     margin-left: 1em;
 `
 const ListItem=styled.li`
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.2px;
+    @media (min-width: 600px) {
+        font-size: 1.5rem;
+    }
 `
 
 const CardModal = ({setOpenModal, image, data}) => {

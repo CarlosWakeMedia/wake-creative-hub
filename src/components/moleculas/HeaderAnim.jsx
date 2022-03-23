@@ -36,8 +36,8 @@ const ImageContainer = styled.figure`
   width: 100%;
   z-index: 70;
   @media (max-width: 680px) {
-    right: 8em;
-    width: 140%;
+    right: 12em;
+    width: 160%;
   }
 ` 
 const Image = styled.img`

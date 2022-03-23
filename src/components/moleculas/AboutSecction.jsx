@@ -31,7 +31,7 @@ const ContentContainer = styled.div`
               0 16px 16px rgba(0,0,0,0.1);
     @media (min-width: 768px) {
         grid-template-columns: 40% auto;
-        grid-template-rows: 40% 60%;
+        grid-template-rows: 45% 55%;
         grid-template-areas:
             "img    list "
             "img  desc "

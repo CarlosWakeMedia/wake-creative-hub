@@ -17,11 +17,14 @@ const ButtonPrimary = styled.a`
     color: white;
     border: 1px solid white;
   }
+  span{
+    margin-right: .8em;
+  }
 `;
 
 const Button = ({value, href, download}) => {
   return (
-    <ButtonPrimary href={href} download={download}>
+    <ButtonPrimary href={href} download={download} target="_blank" rel="noopener noreferrer">
       {value}
     </ButtonPrimary>
   )
