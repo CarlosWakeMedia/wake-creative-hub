@@ -16,6 +16,7 @@ const ContentContainer = styled.div`
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    gap: .5em;
     width: 90%;
     height: auto;
     margin: 0 auto;
