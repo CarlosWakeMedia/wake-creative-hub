@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import {Button} from '../atoms/Button'
-import { BackgroundColor } from '../../utils/constants';
-import { AiFillBehanceCircle } from "react-icons/ai";
+import { BackgroundColor, TextColor } from '../../utils/constants';
+import { AiFillBehanceSquare } from "react-icons/ai";
 
 const ContainerBriefcase = styled.section`
   width: 100%;
@@ -14,18 +14,23 @@ const ContainerBriefcase = styled.section`
   align-items: center;
   padding: 5rem 0;
   background-color: ${BackgroundColor};
-  color: white;
 `;
 
-export const Title = styled.h1`
-  font-size: 2rem;
+export const Title = styled.h2`
+  width: 90%;
+  max-width: 600px;
+  margin: 1rem auto;
   text-align: center;
-  margin: 1rem 0;
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 50px;
+  color: ${TextColor};
 `;
 export const Text = styled.p`
   font-size: 1.2rem;
   text-align: center;
   margin: 0;
+  color: ${TextColor};
 `;
 
 const BottonContainer = styled.div`
@@ -34,6 +39,12 @@ const BottonContainer = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   gap: 1em;
+  a svg{
+    width: 1.4rem;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
 `
 
 
@@ -41,7 +52,7 @@ const Briefcase = () => {
   return (
     <ContainerBriefcase id='Portafolio'>
       <Title>¿Quieres Conocer parte de nuestro trabajo?</Title>
-      <Text>Descarga nuestra presentación</Text>
+      {/* <Text>Descarga nuestra presentación</Text> */}
       <BottonContainer>
         <Button
           href='https://www.behance.net/'
@@ -50,7 +61,7 @@ const Briefcase = () => {
               <span>
                 Ver Behance
               </span> 
-              <AiFillBehanceCircle/>
+              <AiFillBehanceSquare/>
             </React.Fragment>
             )}
         />

@@ -78,6 +78,7 @@ const Menu = styled.ul`
     }
     li a:hover{
         font-weight: 600;
+        cursor: pointer;
     }
     li{
         padding: 1em;

@@ -1,21 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 300;
-  color: #252B42;
+  color: #31302e;
 }
-
+body.active-modal{
+  overflow-y: hidden;
+}
 .active {
   color: #F47F6B;
   font-weight: 400;
   font-size: 1.5rem;
 }
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body.active-modal{
-  overflow-y: hidden;
+@media (min-width: 1024px) {
+  .active {
+    color: #31302e;
+    border-bottom: 1px solid #8590c8;
+  }
 }

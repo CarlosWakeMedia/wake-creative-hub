@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import { useForm, ValidationError } from '@formspree/react';
-import { BackgroundColor } from '../../utils/constants'
+import { BackgroundColor, Black, TextColor } from '../../utils/constants'
 import { Title, Text } from './Briefcase';
 import { IconContext } from "react-icons";
 import { BsFacebook, BsLinkedin, BsInstagram, BsYoutube } from 'react-icons/bs';
@@ -54,7 +54,8 @@ const SubTitle = styled.h2`
     margin: 10px 0px;
     padding-bottom: 10px;
     width: 14rem;
-    color: ${BackgroundColor};
+    font-weight: 700;
+    color: ${Black};
     border-bottom: 3px solid ${BackgroundColor};
 `;
 
@@ -79,8 +80,9 @@ const SubText = styled.label`
   content: attr(type);
   display: block;
   margin: 28px 0px 0px;
-  font-size: 14px;
-  color: ${BackgroundColor};
+  font-size: 1rem;
+  font-weight: 400;
+  color: ${Black};
 `;
 
 const FormButton = styled.button`
@@ -91,7 +93,7 @@ const FormButton = styled.button`
   border:2px solid ${BackgroundColor};
   /* border-radius: 20px; */
   background:0;
-  color:${BackgroundColor};
+  color:${TextColor};
   cursor:pointer;
   transition:all .3s;
   :hover{
@@ -106,11 +108,14 @@ const InfoContainer = styled.div`
   bottom:-15px;
   right:-20px;
   background:${BackgroundColor};
-  color:#fff;
+  color: ${TextColor};
+
   width:320px;
   padding:16px 4px 16px 0;
   /* border-radius:6px; */
-  font-size:13px;
+  font-size:.8rem;
+  font-weight: 700;
+  line-height: 18px;
   /* border-radius: 30px; */
   box-shadow: 0 1px 1px rgba(0,0,0,0.1),
               0 2px 2px rgba(0,0,0,0.1),
@@ -137,6 +142,7 @@ const SocialLinks = styled.a`
   height: auto;
   svg{
     margin: 10px;
+    color: ${Black};
   }
 `;
 
