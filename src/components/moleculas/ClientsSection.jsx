@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { PrimaryColor, SecondaryColor } from '../../utils/constants'
+import { Black, PrimaryColor, SecondaryColor } from '../../utils/constants'
 import clientsImage from '../../assets/img/nuestros-clientes.svg';
 import { ClientsLogos } from '../atoms/ClientsLogos';
 
@@ -19,7 +19,8 @@ const ContentContainer = styled.div`
     width: 90%;
     height: auto;
     margin: 0 auto;
-    border-radius: 30px;
+    /* border-radius: 30px; */
+    /* border: 2px solid ${Black}; */
     box-shadow: 0 1px 1px rgba(0,0,0,0.1),
               0 2px 2px rgba(0,0,0,0.1),
               0 4px 4px rgba(0,0,0,0.1),

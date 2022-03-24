@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { SecondaryColor } from '../../utils/constants'
+import { Black, SecondaryColor } from '../../utils/constants'
 import aboutImage from '../../assets/img/aboutImage.svg';
 
 const AboutContainer = styled.section`
@@ -23,7 +23,8 @@ const ContentContainer = styled.div`
     margin: 0 auto;
     padding: 1em 0;
     background-color: #F8EEE2;
-    border-radius: 30px;
+    /* border-radius: 30px; */
+    /* border: 2px solid ${Black}; */
     box-shadow: 0 1px 1px rgba(0,0,0,0.1),
               0 2px 2px rgba(0,0,0,0.1),
               0 4px 4px rgba(0,0,0,0.1),

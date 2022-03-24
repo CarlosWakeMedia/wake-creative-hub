@@ -13,27 +13,6 @@
     ]
   },
   "card2": {
-    "title": "Presence ",
-    "text":"Google es más que una herramienta: la presencia digital se trata de una estrategia completa",
-    "puntos": [
-      "Análisis de tu Website",
-      "SEO",
-      "UX desing & mejoras del sitio",
-      "Desarrollo WEB y app",
-      "Display & Ads en social media y WWW"
-    ]
-  },
-  "card3": {
-    "title": "Full Strategy",
-    "text":"Cuando todo se mueve tan rápido, una estrategia real es algo dificil de conseguir, Nosotros lo hacemos algo tangible para ti",
-    "puntos": [
-      "Análisis demográficos y de interes",
-      "Estrategias de Engagement & Awareness",
-      "Estrategias de tráfico y conversión",
-      "Diseño de media plan ajustado a budget, con enfoque a objetivos y segmentación"
-    ]
-  },
-  "card4": {
     "title": "Creativity",
     "text":"Por creatividad no paramos, contamos con distintas disciplinas dentro de nuestro equipo que nos permite desarrollar las mejores ideas para tu marca",
     "puntos": [
@@ -45,7 +24,18 @@
       "Proyectos creativos"
     ]
   },
-  "card5": {
+  "card3": {
+    "title": "Presence ",
+    "text":"Google es más que una herramienta: la presencia digital se trata de una estrategia completa",
+    "puntos": [
+      "Análisis de tu Website",
+      "SEO",
+      "UX desing & mejoras del sitio",
+      "Desarrollo WEB y app",
+      "Display & Ads en social media y WWW"
+    ]
+  },
+  "card4": {
     "title": "True Content",
     "text":"Desarrollamos un mapa de creatividad y estrategia, enfocado en tus objetivos",
     "puntos": [
@@ -55,6 +45,16 @@
       "Producción audiovisual",
       "Manejo de comunidad y crisis",
       "Motion Graphics"
+    ]
+  },
+  "card5": {
+    "title": "Full Strategy",
+    "text":"Cuando todo se mueve tan rápido, una estrategia real es algo dificil de conseguir, Nosotros lo hacemos algo tangible para ti",
+    "puntos": [
+      "Análisis demográficos y de interes",
+      "Estrategias de Engagement & Awareness",
+      "Estrategias de tráfico y conversión",
+      "Diseño de media plan ajustado a budget, con enfoque a objetivos y segmentación"
     ]
   },
   "card6": {

@@ -27,7 +27,7 @@ const Form = styled.form`
   width:90%;
   height:28rem;
   background:#e6e6e6;
-  border-radius: 30px;
+  /* border-radius: 30px; */
   box-shadow: 0 1px 1px rgba(0,0,0,0.1),
               0 2px 2px rgba(0,0,0,0.1),
               0 4px 4px rgba(0,0,0,0.1),
@@ -70,7 +70,7 @@ const Input = styled.input`
   border-bottom:2px solid ${BackgroundColor};
   :focus {
     border:2px solid ${BackgroundColor};
-    border-radius: 20px;
+    /* border-radius: 20px; */
     }
 `;
 
@@ -89,7 +89,7 @@ const FormButton = styled.button`
   padding:8px 12px;
   margin:1rem 0 1rem 0;
   border:2px solid ${BackgroundColor};
-  border-radius: 20px;
+  /* border-radius: 20px; */
   background:0;
   color:${BackgroundColor};
   cursor:pointer;
@@ -109,9 +109,9 @@ const InfoContainer = styled.div`
   color:#fff;
   width:320px;
   padding:16px 4px 16px 0;
-  border-radius:6px;
+  /* border-radius:6px; */
   font-size:13px;
-  border-radius: 30px;
+  /* border-radius: 30px; */
   box-shadow: 0 1px 1px rgba(0,0,0,0.1),
               0 2px 2px rgba(0,0,0,0.1),
               0 4px 4px rgba(0,0,0,0.1),

@@ -1,6 +1,5 @@
 import React from 'react';
 import styled, {keyframes} from 'styled-components';
-import { BsFillHandIndexFill } from "react-icons/bs";
 
 import branding from '../../assets/img/card__branding.svg';
 import contend from '../../assets/img/card__contend.svg';
@@ -77,6 +76,7 @@ const TitleCard = styled.h3`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding-left: 1em;
   font-size: 1.25rem;
   font-weight: 700;
