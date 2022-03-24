@@ -27,9 +27,10 @@ export const Title = styled.h2`
   color: ${TextColor};
 `;
 export const Text = styled.p`
+  margin: 0 auto;
+  width: 80%;
   font-size: 1.2rem;
   text-align: center;
-  margin: 0;
   color: ${TextColor};
 `;
 

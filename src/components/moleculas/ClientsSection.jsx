@@ -21,6 +21,7 @@ const ContentContainer = styled.div`
     margin: 0 auto;
     /* border-radius: 30px; */
     /* border: 2px solid ${Black}; */
+    overflow: hidden;
     box-shadow: 0 1px 1px rgba(0,0,0,0.1),
               0 2px 2px rgba(0,0,0,0.1),
               0 4px 4px rgba(0,0,0,0.1),

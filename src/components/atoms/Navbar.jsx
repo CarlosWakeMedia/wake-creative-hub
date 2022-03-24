@@ -14,12 +14,13 @@ const HeaderContainer = styled.div`
   align-items: flex-start;
   justify-content: space-between;
   width: 100%;
-  height: auto;
+  height: 3em;
+  
   background-color: ${PrimaryColor};
   z-index: 100;
   @media (min-width: 1024px) {
     width: 100%;
-    height: 5rem;
+    /* height: 3rem; */
     flex-direction: row;
     align-items: center;
     box-shadow: 0 1px 1px rgba(244,127,107,0.1),
@@ -34,9 +35,13 @@ const HeaderContainer = styled.div`
 `;
 
 const Logo = styled.img`
-  max-width: 5em;
-  height: auto;
-  margin: 0.6rem;
+    position: relative;
+    top: -.5em;
+    width: 4em;
+    margin: 0 0.6em;
+    @media (min-width: 1024px) {
+        top: 0;
+    }
 `;
 const MenuContainer = styled.nav`
     position: absolute;
@@ -90,7 +95,7 @@ const Menu = styled.ul`
         position: static;
         flex-direction: row;
         justify-content: space-evenly;
-        align-items: end;
+        align-items: flex-end;
         width: 100%;
         height: 100%;
         font-size: 1rem;
@@ -99,6 +104,9 @@ const Menu = styled.ul`
         color: ${Black};
         & li a{
             font-size: 1.125rem;
+        }
+        li{
+            padding: 0em;
         }
     }
 `;
@@ -109,19 +117,19 @@ const ContainerIcon = styled.div`
 `
 const IconMenu = styled.div`
     position: relative;
-    width: 3em;
-    height: .5em;
+    width: 2.5em;
+    height: .4em;
     background-color: ${Black};
     margin: 1em;
-    margin-top: 2em;
+    margin-top: .5em;
     z-index: 50;
     &::after,
     &::before{
         content: '';
         display: inline-block;
         position: absolute;
-        width: 3em;
-        height: .5em;
+        width: 2.5em;
+        height: .4em;
         background-color: ${Black};
         transition: transform .3s;
     }

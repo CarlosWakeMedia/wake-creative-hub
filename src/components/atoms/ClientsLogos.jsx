@@ -23,11 +23,12 @@ const logosImages = [dockers, ficha, infonavit, maggie,
 
 const LogoContainer = styled.div`
     display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(6em, 3em));
-	grid-gap: 3em;
+	  grid-template-columns: repeat(auto-fill, minmax(6em, 3em));
+	  grid-gap: 3em;
     padding: 2em;
     justify-content: center;
     max-width: 700px;
+    overflow: hidden;
 `
 const Logo = styled.img`
     width: 100%;

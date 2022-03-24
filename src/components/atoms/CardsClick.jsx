@@ -3,8 +3,8 @@ import styled, {keyframes} from 'styled-components';
 
 import branding from '../../assets/img/card__branding.svg';
 import contend from '../../assets/img/card__contend.svg';
-import creative from '../../assets/img/card__creative.svg';
-import dataAnalitycs from '../../assets/img/card__data.svg';
+import creative from '../../assets/img/card__creative.png';
+import dataAnalitycs from '../../assets/img/card__data.png';
 import presence from '../../assets/img/card__presence.svg';
 import strategy from '../../assets/img/card__strategy.svg';
 
@@ -139,9 +139,7 @@ const CardsClick1 = ({setInfoCard, setOpenModal, setImageModal}) => {
               <ImageCard src={creative} alt={data.card2.title} />
               <TitleCardContainer>
                 <TitleCard>
-                  <samp className='title'>
-                    {data.card2.title}
-                  </samp>
+                  {data.card2.title}
                   <Cta>
                     ver más
                   </Cta>
@@ -256,4 +254,4 @@ const CardsClick6 = ({setInfoCard, setOpenModal, setImageModal}) => {
     )
   }
 
-export { CardsClick1, CardsClick2, CardsClick3, CardsClick4, CardsClick5, CardsClick6, }
+export { CardsClick1, CardsClick2, CardsClick3, CardsClick4, CardsClick5, CardsClick6, InfoContainer}
