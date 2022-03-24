@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { css } from "styled-components";
 import { Link } from "react-scroll";
-import { Black, PrimaryColor, White, SecondaryColor} from "../../utils/constants";
+import { Black, PrimaryColor, White } from "../../utils/constants";
 import logo from "../../assets/img/logo.svg";
 
 
