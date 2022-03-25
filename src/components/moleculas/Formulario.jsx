@@ -231,9 +231,9 @@ const Formulario = () => {
 
   return (
     <Container id="Contacto">
-      <Title>Contactanos</Title>
+      <Title>Time to wake up!</Title>
       <Text>
-        Estamos listos para ayudarte a cumplir tus sueños, envianos un email!!
+        Cuéntanos sobre ti o acerca de tu proyecto
       </Text>
       <FormContainer>
         <Form onSubmit={handleSubmit}>

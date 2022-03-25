@@ -1,7 +1,7 @@
 {
   "card1": {
     "title": "Branding",
-    "text":"Damos vida a las marcas desde el momento que son una idea (ó que quieren cambiar su identidad) y ñas acompañamos o damos seguimiento a lo largo de su trayectoria",
+    "text":"Damos vida a las marcas desde el momento que son una idea (o que quieren cambiar su identidad) y las acompañamos o damos seguimiento a lo largo de su trayectoria",
     "puntos": [
       "Conceptualización",
       "Propuestas de Valor",
@@ -14,24 +14,24 @@
   },
   "card2": {
     "title": "Creativity",
-    "text":"Por creatividad no paramos, contamos con distintas disciplinas dentro de nuestro equipo que nos permite desarrollar las mejores ideas para tu marca",
+    "text":"Contamos con distintas disciplinas dentro de nuestro equipo que nos permiten desarrollar las mejores ideas para tu marca",
     "puntos": [
       "Storytelling",
       "Desarrollo de campañas por objetivo ",
       "Activaciones online y offline",
       "Eventos",
-      "Colaboraciones",
-      "Proyectos creativos"
+      "Colaboraciones externas",
+      "Proyectos 360 creativos"
     ]
   },
   "card3": {
     "title": "Online presence",
-    "text":"Google es más que una herramienta: la presencia digital se trata de una estrategia completa",
+    "text":"Google es más que una herramienta. Tu presencia digital se trata de una estrategia completa",
     "puntos": [
       "Análisis de tu Website",
-      "SEO",
+      "Estrategia SEO & SEM",
       "UX desing & mejoras del sitio",
-      "Desarrollo WEB y app",
+      "Desarrollo Web y App",
       "Display & Ads en social media y WWW"
     ]
   },
@@ -49,12 +49,12 @@
   },
   "card5": {
     "title": "Full Strategy",
-    "text":"Cuando todo se mueve tan rápido, una estrategia real es algo dificil de conseguir, Nosotros lo hacemos algo tangible para ti",
+    "text":"Cuando todo se mueve tan rápido, una estrategia real es algo dificil de conseguir. Nosotros lo hacemos algo tangible para ti",
     "puntos": [
       "Análisis demográficos y de interes",
       "Estrategias de Engagement & Awareness",
       "Estrategias de tráfico y conversión",
-      "Diseño de media plan ajustado a budget, con enfoque a objetivos y segmentación"
+      "Diseño de media plan ajustado a budget (con enfoque a objetivos y segmentación)"
     ]
   },
   "card6": {
@@ -63,7 +63,7 @@
     "puntos": [
       "Análisis de comportamiento del sitio",
       "Análisis de tráfico y navegación con seguimiento de Trackers y Pixels",
-      "Análisis de target (qué consumen, qué les gusta, cuáles son sus influencers, y cuáles son sus hábitos de comsumo en medios digitales"
+      "Análisis de Mercado Meta (qué consumen, qué les gusta y qué medios digitales consumen)"
     ]
   }
 }

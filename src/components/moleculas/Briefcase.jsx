@@ -52,7 +52,7 @@ const BottonContainer = styled.div`
 const Briefcase = () => {
   return (
     <ContainerBriefcase id='Portafolio'>
-      <Title>¿Quieres Conocer parte de nuestro trabajo?</Title>
+      <Title>Conoce nuestro trabajo</Title>
       {/* <Text>Descarga nuestra presentación</Text> */}
       <BottonContainer>
         <Button

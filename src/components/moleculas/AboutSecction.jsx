@@ -101,10 +101,10 @@ const AboutSecction = () => {
       <ContentContainer>
         <Image src={aboutImage} alt={'Imagen del Acerca de wake creative hub'} />
         <AboutList>
-          <AboutListItem>No somos una consultora.</AboutListItem>
-          <AboutListItem>No somos un estudio.</AboutListItem>
-          <AboutListItem>No somos agencia.</AboutListItem>
-          <AboutListItem>No somos una boutique de servicios.</AboutListItem>
+          <AboutListItem>No somos una consultora</AboutListItem>
+          <AboutListItem>No somos un estudio</AboutListItem>
+          <AboutListItem>No somos agencia</AboutListItem>
+          <AboutListItem>No somos una boutique de servicios</AboutListItem>
         </AboutList>
         <AboutText>
             <b>WAKE es un hub</b> que busca conocer el
