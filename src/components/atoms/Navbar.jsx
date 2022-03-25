@@ -112,32 +112,32 @@ const Menu = styled.ul`
 `;
 const ContainerIcon = styled.div`
     width: auto;
-    height: 5em;
+    height: 3.5em;
     cursor: pointer;
 `
 const IconMenu = styled.div`
     position: relative;
-    width: 2.5em;
-    height: .4em;
+    width: 2.3em;
+    height: .3em;
     background-color: ${Black};
     margin: 1em;
-    margin-top: .5em;
+    margin-top: .9em;
     z-index: 50;
     &::after,
     &::before{
         content: '';
         display: inline-block;
         position: absolute;
-        width: 2.5em;
-        height: .4em;
+        width: 2.3em;
+        height: .3em;
         background-color: ${Black};
         transition: transform .3s;
     }
     &::before{
-        top: .8em;
+        top: .5em;
     }
     &::after{
-        top: 1.6em;
+        top: 1em;
     }
     @media (min-width: 1024px) {
         display: none;
