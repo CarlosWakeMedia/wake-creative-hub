@@ -9,11 +9,16 @@ const HomeContainer = styled.header`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100vw;
+  max-width: 100%;
   height: 100vh;
+  min-height: auto;
   max-height: 1350px;
   overflow: hidden;
   background-color: ${PrimaryColor};
+  @media (min-width: 1200px) {
+    min-height: 580px;
+  }
 `;
 
 const Home = () => {

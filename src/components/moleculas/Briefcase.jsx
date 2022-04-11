@@ -53,7 +53,6 @@ const Briefcase = () => {
   return (
     <ContainerBriefcase id='Portafolio'>
       <Title>Conoce nuestro trabajo</Title>
-      {/* <Text>Descarga nuestra presentación</Text> */}
       <BottonContainer>
         <Button
           href='https://www.behance.net/wakemediamx'

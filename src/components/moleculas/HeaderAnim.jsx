@@ -8,7 +8,7 @@ import { Black, PrimaryColor, SecondaryColor} from '../../utils/constants';
 
 const HeaderContainer = styled.div`
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: auto;
     min-height: 80vh;
     padding-top: 3em;
@@ -18,7 +18,7 @@ const HeaderContainer = styled.div`
       position: absolute;
       bottom: -50px;
       display: block;
-      width: 100%;
+      width: 100vw;
       height: 30%;
       background-color: ${SecondaryColor};
       @media (min-width: 1200px) {
@@ -33,11 +33,13 @@ const ImageContainer = styled.figure`
   bottom: -5em;
   height: auto;
   min-height: 100%;
-  width: 100%;
+  width: 100vw;
   z-index: 70;
   @media (max-width: 680px) {
-    right: 12em;
-    width: 160%;
+    /* right: 12em; */
+    /* transform: translateX(-5rem);
+    width: 1600%;
+    min-width: 4000px; */
   }
 ` 
 const Image = styled.img`
@@ -45,16 +47,23 @@ const Image = styled.img`
   bottom: 0;
   height: auto;
   min-height: 100%;
-  width: 100%;
+  width: 100vw;
   margin: 0 auto;
   object-fit: cover;
   object-position: center center;
+  @media (max-width: 680px) {
+    right: -1em;
+    /* transform: translateX(-5rem); */
+    width: 160%;
+    /* min-width: 400px; */
+  }
   @media (max-width: 768px) {
     min-height: 50%;
     bottom: 8em;
   }
   @media (min-width: 1200px) {
-    max-width: 1000px;
+    width: 1000px;
+    height: 543.28px;
     height: auto;
     min-height: auto;
     left: calc(50% - 500px);

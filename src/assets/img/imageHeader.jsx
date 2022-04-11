@@ -17,7 +17,7 @@ const ContainerImage = styled.div`
 const Bgimage = styled.svg`
     position: relative;
     bottom: -100px;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     z-index: 20; 
     .cls-1 {
